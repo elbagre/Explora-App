@@ -16,6 +16,16 @@
       body: "I think it's near Kenya.",
       upvotes: 0,
       author_id: 1,
+      answers: [
+        {
+          id: 1,
+          author_id: 2
+        },
+        {
+          id: 2,
+          author_id: 3
+        }
+      ],
       tags: {
         1: {
           id: 1
@@ -29,6 +39,10 @@
       question_id: 2,
       author_id: 1,
       body: "I can't help you",
+      comments: {
+        id: 1,
+        author_id: 2
+      },
       upvotes: 0,
       downvotes: 0,
       }
@@ -44,5 +58,4 @@
       downvotes: 0
     }
   }
-  tagFilters: [1, 7, 14] // Used to track selected Tags for filtering of notes
 }
