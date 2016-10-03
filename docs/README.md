@@ -4,7 +4,7 @@ Users of Explora will be able to interact with other users through a variety of
 topic forums that connect users through questions and answers.
 
 ================================================================================
-##KEY FEATURES:##
+##Functional Goals##
 ================================================================================
 - [ ] Create accounts, log in, and access the main page
 - [ ] A production README, replacing this README
