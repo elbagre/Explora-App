@@ -52,14 +52,12 @@ topic forums that connect users through questions and answers.
 - [ ] Seed users
 - [ ] Review phase 1
 
-<<<<<<< HEAD
 ### Phase 2: Questions Model, API, and components (3 days)
 
 **Objective:** Questions can be created, read, edited and destroyed through
 
 - [ ] `Question` model
 - [ ] Seed database with a small amount of test data
-<<<<<<< HEAD
 - [ ] CRUD API for Questions (`QuestionsController`)
 - [ ] JBuilder views for questions
 - Question components and respective Redux loops
@@ -87,6 +85,7 @@ destroyed via the API.
 - [ ] Seed answers and comments
 
 ### Phase 4: Tags (1 days)
+
 **Objective:** Questions can be tagged with multiple topics, and topics are searchable.
 
 
@@ -98,10 +97,11 @@ destroyed via the API.
 - [ ] Seed topics with seed data
 
 ### Phase 5: Allow Complex Styling in Questions and Answers (Bonus)
+
 **objective:** Allow rich editing of questions.
+
 - Figure out how to edit text and embed pictures into answers and questions
 
-<<<<<<< HEAD
 ### Phase 6: - Pagination / infinite scroll for Questions Index (Bonus)
 
 **objective:** Add infinite scroll to Questions Index
