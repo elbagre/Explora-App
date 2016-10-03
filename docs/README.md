@@ -1,9 +1,9 @@
 #Explora
+================================================================================
 Explora is a web application based on the question and answer website Quora.
 Users of Explora will be able to interact with other users through a variety of
 topic forums that connect users through questions and answers.
 
-================================================================================
 ##Functional Goals##
 ================================================================================
 - [ ] Create accounts, log in, and access the main page
@@ -15,8 +15,6 @@ topic forums that connect users through questions and answers.
 - [ ] Access questions by tag/topic
 - [ ] BONUS: Up/down vote answers to questions, order questions by popularity
 - [ ] BONUS: Styling components
-- [ ] BONUS: Reply to comments
-================================================================================
 ##Design Docs:##
 ================================================================================
 * [View Wireframes][wireframes]
@@ -32,7 +30,7 @@ topic forums that connect users through questions and answers.
 [sample-state]: sample-state.md
 [api-endpoints]: api-endpoints.md
 [schema]: schema.md
-================================================================================
+
 ##Implementation Timeline:##
 ================================================================================
 ### Phase 1: Backend setup and Front End User Authentication (2 days)
