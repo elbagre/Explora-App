@@ -1,9 +1,10 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container.js';
+import HeaderContainer from './header/header_container.js';
 
 const App = ({ children }) => (
   <div>
-    <h1>Explora</h1>
+    <HeaderContainer />
     <GreetingContainer />
     {children}
   </div>
