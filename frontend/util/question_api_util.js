@@ -16,7 +16,6 @@ export const fetchSingleQuestion = (id, success) => {
 };
 
 export const postQuestion = (question, success) => {
-  debugger
   $.ajax({
     method: 'POST',
     url: '/api/questions',

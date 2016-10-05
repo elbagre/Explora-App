@@ -38,33 +38,33 @@ topic forums that connect users through questions and answers.
 
 **Objective:** Functioning rails project with front-end Authentication
 
-- [ ] New Rails project
-- [ ] `User` model/migration
-- [ ] Back end authentication (session/password)
-- [ ] `StaticPages` controller and root view
-- [ ] Webpack & react/redux modules
-- [ ] `APIUtil` to interact with the API
-- [ ] Redux cycle for frontend authentication
-- [ ] User signup/signin components
+- [x] New Rails project
+- [x] `User` model/migration
+- [x] Back end authentication (session/password)
+- [x] `StaticPages` controller and root view
+- [x] Webpack & react/redux modules
+- [x] `APIUtil` to interact with the API
+- [x] Redux cycle for frontend authentication
+- [x] User signup/signin components
 - [ ] Blank landing component after signup/signin
-- [ ] Style signup/signin components
-- [ ] Seed users
-- [ ] Review phase 1
+- [x] Style signup/signin components
+- [x] Seed users
+- [x] Review phase 1
 
 ### Phase 2: Questions Model, API, and components (3 days)
 
 **Objective:** Questions can be created, read, edited and destroyed through
 
-- [ ] `Question` model
-- [ ] Seed database with a small amount of test data
-- [ ] CRUD API for Questions (`QuestionsController`)
-- [ ] JBuilder views for questions
+- [x] `Question` model
+- [x] Seed database with a small amount of test data
+- [x] CRUD API for Questions (`QuestionsController`)
+- [x] JBuilder views for questions
 - Question components and respective Redux loops
-  - [ ] `QuestionsIndex`
-  - [ ] `QuestionIndexItem`
-  - [ ] `QuestionForm`
-- [ ] Style Question components
-- [ ] Seed Questions
+  - [x] `QuestionsIndex`
+  - [x] `QuestionIndexItem`
+  - [x] `QuestionForm`
+- [x] Style Question components
+- [x] Seed Questions
 
 ### Phase 3: Answers and Comments (3 day)
 

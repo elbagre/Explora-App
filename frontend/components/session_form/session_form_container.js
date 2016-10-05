@@ -12,9 +12,11 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   };
 };
 
-const mapStateToProps = (state) => ({
-  loggedIn: Boolean(state.session.currentUser),
-  errors: state.session.errors
-});
+const mapStateToProps = (state) => {
+  return ({
+    loggedIn: Boolean(state.session.currentUser),
+    errors: state.session.errors
+  });
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);

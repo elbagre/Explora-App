@@ -1,3 +1,4 @@
+import { hashHistory } from 'react-router';
 import React from 'react';
 
 class SessionForm extends React.Component {
@@ -38,7 +39,7 @@ class SessionForm extends React.Component {
 
   render () {
     return (
-      <form className="register-form" onSubmit={this.handleSubmit}>
+      <form className="register-form group" onSubmit={this.handleSubmit}>
         {this.signupForm()}
         <label>Email:</label>
           <input onChange={this.handleChange("email")}

@@ -8,6 +8,7 @@
 
 
 User.destroy_all
+guest = User.create!(username: "guest", email: "guest@guest.com", password: "guests")
 one = User.create!(username: "Man McMann", email: "man@gmail.com", password: "password")
 two = User.create!(username: "Billy DaBillyo", email: "billy@gmail.com", password: "password")
 three = User.create!(username: "Shira Nye", email: "shira@gmail.com", password: "password")

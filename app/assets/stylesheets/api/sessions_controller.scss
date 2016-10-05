@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .session-content {
-  margin: 0 0 -20px 0;
   height: 100vh;
   font-family: helvetica;
   background-image: url("http://payload336.cargocollective.com/1/17/574234/9036849/DSC_0474-copy_2848.JPG");
@@ -13,12 +12,11 @@
 }
 
 .registration {
+  margin: 0 auto;
   background: #fff;
   color: white;
-  padding: 30px 0;
   font-weight: bold;
-  width: 560px;
-  margin: 0 auto;
+  width: 600px;
   text-align: center;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -28,47 +26,58 @@
 }
 
 .registration-links {
+  width: 300px;
+  height: 300px;
   float: left;
-  padding: 0 20px;
-  width: 260px;
   border-right: 1px solid #ccc;
-  height: 240px;
+}
+
+.terms {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  margin: 0 20px 0 48px;
 }
 
 .signup {
-  border-radius: 5px;
-  margin: 0 auto;
-  background: #B22222;
-  width: 200px;
-  margin: 20 auto;
+  border-radius: 2px;
+  color: #B22222;
+  width: 180px;
+  margin: 30px 68px 30px 48px;
+  padding: 10px;
+  border: 1px solid #B22222;
+  background: whitesmoke;
 }
 
 .login {
-  border-radius: 5px;
-  width: 200px;
-  margin: 20px auto;
-  background: #1E90FF;
+  background: whitesmoke;
+  border-radius: 2px;
+  width: 180px;
+  color: #1E90FF;
+  border: 1px solid #1E90FF;
+  margin: 30px 48px 10px 48px;
+  padding: 10px;
 }
 
 .registration-links a {
   display: block;
-  padding: 10px 20px;
 }
 
 .register-form {
+  margin: 10px 48px;
   display: block;
-  width: 238px;
+  width: 200px;
   float: right;
-  text-align: left;
-  padding-left: 20px;
 }
 
 .register-form label {
-  margin-bottom: 5px;
   display: block;
   font-size: 14px;
   font-weight: bold;
+  text-align: left;
   color: #000;
+  margin-bottom: 5px;
 
 }
 
@@ -78,19 +87,31 @@ input[type="email"], input[type="password"] {
   border: 1px solid #aaa;
   color: #aaa;
   width: 200px;
-  margin-bottom: 20px;
   border-radius: 2px;
   font-weight: normal;
-  padding: 5px 10px;
+  margin-bottom: 5px;
 
 }
 
 .register-form input[type='submit'] {
-  margin: 0;
   background: #4682B4;
   display: block;
-  padding: 10px;
-  margin: 10px 20px;
-  align-self: right;
   float: right;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.guest {
+  margin: 30px 48px;
+  padding: 10px 20px;
+  float: right;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: helvetica;
+  color: #4169E1;
+  border: 1px solid #4169E1;
+  background: whitesmoke;
 }

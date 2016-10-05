@@ -8,10 +8,8 @@ const defaultState = {
 
 const SessionReducer = (inititalState = defaultState, action) => {
   switch (action.type) {
-    case Session.LOGIN:
-      return merge({}, inititalState, { currentUser: action.user });
-    case Session.SIGNUP:
-      return merge({}, inititalState, { currentUser: action.user });
+    case Session.REQUEST_CURRENT_USER:
+      return merge({}, inititalState, { currentUser: action.currentUser });
     case Session.LOGOUT:
       return defaultState;
     default:

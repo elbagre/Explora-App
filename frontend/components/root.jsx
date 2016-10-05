@@ -8,16 +8,16 @@ import QuestionContainer from './questions/question_container.js';
 
 
 const Root = ({ store }) => {
+  const loggedIn = () => store.getState().session.currentUser;
+
   const _redirectIfLoggedIn = (nextState, replace) => {
-    const currentUser = store.getState().session.currentUser;
-    if (currentUser) {
+    if (loggedIn()) {
       replace('/home');
     }
   }
 
   const _redirectUnlessLoggedIn = (nextState, replace) => {
-    const currentUser = store.getState().session.currentUser;
-    if (currentUser === null) {
+    if (!loggedIn()) {
       replace('/entry');
     }
   }
@@ -26,12 +26,11 @@ const Root = ({ store }) => {
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App} onEnter={_redirectUnlessLoggedIn}>
-          <IndexRoute component={App}/>
           <Route path="/home" component={QuestionContainer}/>
         </Route>
         <Route path="/entry" component={SessionContent} onEnter={_redirectIfLoggedIn}>
-          <Route path="/signup" component={SessionForm} />
-          <Route path="/login" component={SessionForm} />
+          <Route path="/signup" component={SessionForm} onEnter={_redirectIfLoggedIn}/>
+          <Route path="/login" component={SessionForm} onEnter={_redirectIfLoggedIn}/>
         </Route>
       </Router>
     </Provider>
