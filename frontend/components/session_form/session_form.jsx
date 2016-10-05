@@ -26,29 +26,28 @@ class SessionForm extends React.Component {
   signupForm() {
     if (this.props.formType === 'signup') {
       return (
-        <label>Full Name
+        <div>
+        <label>Full Name:</label>
           <input onChange={this.handleChange("username")}
             type="text"
             value={this.state.username}/>
-        </label>
+        </div>
       );
     }
   }
 
   render () {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="register-form" onSubmit={this.handleSubmit}>
         {this.signupForm()}
-        <label>Email
+        <label>Email:</label>
           <input onChange={this.handleChange("email")}
             type="text"
             value={this.state.email}/>
-        </label>
-        <label>Password
+          <label>Password:</label>
           <input onChange={this.handleChange("password")}
             type="password"
             value={this.state.password}/>
-        </label>
         <input type="submit" value="Submit"/>
       </form>
     );

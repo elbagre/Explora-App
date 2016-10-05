@@ -5,8 +5,7 @@ import HeaderContainer from './header/header_container.js';
 const App = ({ children }) => (
   <div>
     <HeaderContainer />
-    <GreetingContainer />
-    {children}
+    <GreetingContainer children={children}/>
   </div>
 );
 
