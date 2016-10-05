@@ -2,71 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div, h1, h3, label, input, form, ul, li, a {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  text-align: inherit;
-  vertical-align: inherit;
-  box-sizing: inherit;
-  font: inherit;
-  font-family: inherit;
-  text-decoration: none;
-  background: transparent;
-  color: inherit;
-  border-radius: inherit;
-}
-
-body {
-  display: block;
-  margin: 0 auto;
-  width: 900px;
-  box-sizing: content-box;
+.session-content {
+  margin: 0 0 -20px 0;
+  height: 100vh;
+  font-family: helvetica;
   background-image: url("http://payload336.cargocollective.com/1/17/574234/9036849/DSC_0474-copy_2848.JPG");
-  background-size: 1900px 1320px;
+  background-size: 2000px 1420px;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 100px;
-  font-family: helvetica;
-}
-
-ul {
-  list-style: none;
-}
-
-
-.group:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-.header {
-  display: block;
-  background: #f00;
-}
-
-.display-page {
-  text-align: center;
-  display: block;
-  width: 600px;
-  margin: 0 auto;
-  font-family: helvetica;
-}
-
-.display-page > h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: 	#800000;
-  margin: 20px;
-}
-
-.display-page > h3 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #aaa;
-  margin: 20px;
 }
 
 .registration {
@@ -90,10 +33,10 @@ ul {
   width: 260px;
   border-right: 1px solid #ccc;
   height: 240px;
-  border-radius: 5px;
 }
 
 .signup {
+  border-radius: 5px;
   margin: 0 auto;
   background: #B22222;
   width: 200px;
@@ -101,6 +44,7 @@ ul {
 }
 
 .login {
+  border-radius: 5px;
   width: 200px;
   margin: 20px auto;
   background: #1E90FF;
@@ -111,34 +55,10 @@ ul {
   padding: 10px 20px;
 }
 
-.footer {
-  margin: 0 auto;
-  color: #aaa;
-  padding: 10px 20px;
-  background: #eee;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  width: 520px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.footer > ul {
-  margin: 0 auto;
-  padding-left: 20px;
-}
-
-.footer li {
-  display: block;
-  float: left;
-  padding-right: 20px;
-}
-
 .register-form {
   display: block;
   width: 238px;
   float: right;
-  border-radius: 5px;
   text-align: left;
   padding-left: 20px;
 }

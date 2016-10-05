@@ -1,0 +1,54 @@
+.home-header {
+  display: block;
+  background: #fff;
+  border-top: 2px solid #800000;
+  border-bottom:1px solid #ccc;
+}
+
+.home-nav {
+  width: 1000px;
+  margin: 0 auto;
+  color: #800000;
+}
+
+.home-logo {
+  float: left;
+  width: 100px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: helvetica;
+}
+
+.search {
+  margin: 10px;
+  padding: 5px;
+  float: left;
+  width: 400px;
+  background: #eee;
+  color: #aaa;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.home-links {
+  float: left;
+  width: 200px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.home-links > li {
+  float: left;
+  padding: 10px 20px;
+}
+
+.home-header button {
+  color: #800000;
+  background: whitesmoke;
+  font-weight: bold;
+  margin: 2px;
+  border-radius: 50%;
+  float: left;
+  padding: 13px 5px;
+}

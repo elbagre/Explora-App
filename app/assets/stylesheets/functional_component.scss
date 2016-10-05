@@ -1,0 +1,44 @@
+.root-header {
+  text-align: center;
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.root-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: 	#800000;
+  padding-top: 100px;
+  margin: 0 20px 20px 20px;
+}
+
+.root-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2F4F4F;
+  margin: 20px;
+}
+
+.footer {
+  margin: 0 auto;
+  color: #aaa;
+  padding: 10px 20px;
+  background: #eee;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  width: 520px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.footer > ul {
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.footer li {
+  display: block;
+  float: left;
+  padding-right: 20px;
+}

@@ -3,7 +3,7 @@ import { applyMiddleware } from 'redux';
 import QuestionMiddleware from './question_middleware';
 
 const RootMiddleware = applyMiddleware(
-  SessionMiddleware
+  SessionMiddleware, QuestionMiddleware
 );
 
 export default RootMiddleware;

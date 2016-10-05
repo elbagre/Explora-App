@@ -3,7 +3,7 @@ export const fetchAllQuestions = (success) => {
     method: 'GET',
     url: '/api/questions',
     success,
-    failure
+    error: (error) => console.log(error)
   });
 };
 
@@ -11,17 +11,16 @@ export const fetchSingleQuestion = (id, success) => {
   $.ajax({
     method: 'GET',
     url: `/api/questions/${id}`,
-    success,
-    failure
+    success
   });
 };
 
-export const postQuestion = (question, success, failure) => {
+export const postQuestion = (question, success) => {
+  debugger
   $.ajax({
     method: 'POST',
     url: '/api/questions',
-    data: question,
-    success,
-    failure
+    data: {question},
+    success
   });
 };

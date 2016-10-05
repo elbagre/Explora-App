@@ -1,13 +1,12 @@
 import * as Questions from '../actions/question_actions.js';
 import { merge } from 'lodash';
 
-const QuestionReducer = (inititalState = {}, action) => {
+const QuestionReducer = (inititalState = [], action) => {
   switch(action.type) {
     case Questions.RECEIVE_ALL_QUESTIONS:
-      return merge({}, inititalState, action.benches);
+      return action.questions;
     case Questions.RECEIVE_SINGLE_QUESTION:
-      const newQuestion = { [action.bench.id]: action.bench };
-      return merge({}, inititalState, newQuestion);
+      return [...inititalState, action.question];
     default:
       return inititalState;
   }

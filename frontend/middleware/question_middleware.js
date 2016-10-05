@@ -2,16 +2,18 @@ import * as Questions from '../actions/question_actions.js';
 import * as API from '../util/question_api_util.js';
 
 const QuestionMiddleware = ({getState, dispatch}) => (next) => (action) => {
-  const questionsSuccess = (questions) => dispatch(Questions.receiveAllQuestions(data));
+  const questionsSuccess = (questions) => dispatch(Questions.receiveAllQuestions(questions));
   const questionSuccess = (question) => dispatch(Questions.receiveSingleQuestion(question));
   switch(action.type) {
-    case REQUEST_ALL_QUESTIONS:
+    case Questions.REQUEST_ALL_QUESTIONS:
       API.fetchAllQuestions(questionsSuccess);
-      next(action);
-    case REQUEST_SINGLE_QUESTION:
+      return next(action);
+    case Questions.REQUEST_SINGLE_QUESTION:
       API.fetchSingleQuestion(action.id, questionSuccess);
-    case CREATE_QUESTION:
-      API.fetchSingleQuestion(questionSuccess);
+      return next(action);
+    case Questions.CREATE_QUESTION:
+      API.postQuestion(action.question, questionSuccess);
+      return next(action);
     default:
       return next(action);
   }

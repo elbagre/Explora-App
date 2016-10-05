@@ -1,3 +1,70 @@
-// Place all the styles related to the API::Questions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.question-index {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.question-index > h2 {
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+  padding: 20px 0 10px 0;
+}
+
+.question-box {
+  border-bottom: 1px solid #ccc;
+}
+
+.question-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0 5px 0;
+}
+
+.question-author {
+  font-size: 16px;
+  color: #2F4F4F;
+  padding-bottom: 20px;
+}
+
+.question-description {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.question-links {
+  padding-bottom: 15px;
+  vertical-align: bottom;
+}
+
+.question-links li {
+  display: block;
+  float: left;
+}
+
+.question-links a {
+  display: block;
+  margin: 5px 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.question-links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.question-links button {
+  padding: 5px;
+  border-radius: 3px;
+  background: #F0FFFF;
+  color: #4682B4;
+  font-weight: bold;
+  border: 1px solid #ADD8E6;
+  cursor: pointer;
+}
+
+.question-links button:hover {
+  border: 1px solid #4682B4;
+}
