@@ -109,3 +109,7 @@
 .focused button {
   display: block;
 }
+
+.focused {
+  display: block;
+}

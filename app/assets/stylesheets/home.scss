@@ -3,6 +3,11 @@
   background: #fff;
   border-top: 2px solid #800000;
   border-bottom:1px solid #ccc;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .home-nav {
@@ -36,7 +41,21 @@
 }
 
 .home-main {
+  z-index: 1;
+  padding-top: 30px;
   margin: 0 auto;
   width: 1000px;
-  height: 100em;
+  height: 100%;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.75;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }

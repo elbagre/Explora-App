@@ -29,6 +29,7 @@ class Question < ActiveRecord::Base
   end
 
   def most_upvoted_author
+    return if !self.answers
     @most_upvoted_author = most_upvoted_answer.author.username
   end
 end
