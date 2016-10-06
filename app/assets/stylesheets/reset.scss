@@ -25,6 +25,10 @@ ul {
   list-style: none;
 }
 
+input[type="submit"] {
+  cursor: pointer;
+}
+
 .group:after {
   content: "";
   clear: both;

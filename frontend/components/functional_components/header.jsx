@@ -1,4 +1,5 @@
 import React from 'react';
+import Search from '../search/search_container.js';
 
 const Header = ({currentUser, logout}) => {
   if (currentUser) {
@@ -6,7 +7,7 @@ const Header = ({currentUser, logout}) => {
       <div className="home-header group">
         <nav className="home-nav">
           <logo className="home-logo">Explora</logo>
-          <span className="search">Ask or Search Explora</span>
+          <Search/>
           <ul className="home-links group">
             <li>Read</li>
             <li>Answer</li>
