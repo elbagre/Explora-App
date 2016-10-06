@@ -36,3 +36,10 @@ q_two = Question.create!(title: "What's the best food to try in Peru?", descript
 q_three = Question.create!(title: "What are the best countries to visit in the world?", description: "My favorites are Colombia and Japan.", author_id: three.id)
 q_four = Question.create!(title: "What is the recommended tip in the States?", description: "Will be travelling to NYC for business and I'm not sure how much to tip.", author_id: four.id)
 q_five = Question.create!(title: "What are some reasonable places to stay in London?", description: "Looking for something under $100 a night.", author_id: five.id)
+
+Answer.destroy_all
+a_one = Answer.create!(body: "Probably around Sakura season. Sakura season occurs sometime early in May or April. The Japanese government usually announces dates in advance, that's how important it is for Japanese people.", author_id: two.id, question_id: q_one.id)
+a_two = Answer.create!(body: "So many things to try. Even if you don't like fish, you should give ceviche a try. There are many different kinds and you are sure to find one you like.", author_id: one.id, question_id: q_two.id)
+a_three = Answer.create!(body: "I hear Cambodia and Thailand are unforgettable. From my personal experience, Italy and Japan are among the most amazing places I have been to in my life.", author_id: one.id, question_id: q_three.id)
+a_four = Answer.create!(body: "You should always aim to tip around 18% when seated at a restaurant. If you are at a bar or being serviced in some other way, 10% tip is acceptable..", author_id: one.id, question_id: q_four.id)
+a_five = Answer.create!(body: "You won't be able to stay in London for under a hundred dollars a night, sorry.", author_id: one.id, question_id: q_five.id)

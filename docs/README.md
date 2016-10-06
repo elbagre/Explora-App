@@ -6,9 +6,9 @@ topic forums that connect users through questions and answers.
 
 ##Functional Goals
 
-- [ ] Create accounts, log in, and access the main page
+- [X] Create accounts, log in, and access the main page
 - [ ] A production README, replacing this README
-- [ ] Hosting on Heroku
+- [X] Hosting on Heroku
 - [ ] Ask Questions
 - [ ] Answer Questions and Comment on Answers
 - [ ] Search Questions
@@ -46,7 +46,7 @@ topic forums that connect users through questions and answers.
 - [x] `APIUtil` to interact with the API
 - [x] Redux cycle for frontend authentication
 - [x] User signup/signin components
-- [ ] Blank landing component after signup/signin
+- [X] Blank landing component after signup/signin
 - [x] Style signup/signin components
 - [x] Seed users
 - [x] Review phase 1
@@ -57,7 +57,7 @@ topic forums that connect users through questions and answers.
 
 - [x] `Question` model
 - [x] Seed database with a small amount of test data
-- [x] CRUD API for Questions (`QuestionsController`)
+- [ ] CRUD API for Questions (`QuestionsController`)
 - [x] JBuilder views for questions
 - Question components and respective Redux loops
   - [x] `QuestionsIndex`
@@ -72,11 +72,11 @@ topic forums that connect users through questions and answers.
 be accessed through their respective components and be read, edited, and
 destroyed via the API.
 
-- [ ] `Answer` model
+- [X] `Answer` model
 - [ ] Seed database with a small amount of test data
 - [ ] CRUD API for Answers and Comments (`AnswersController`, `CommentsController`)
-- [ ] JBuilder views for comments and answers
-- [ ] Adding answers requires a question
+- [X] JBuilder views for comments and answers
+- [X] Adding answers requires a question
 - [ ] Adding comments requires a question
 - [ ] Viewing answers by question
 - [ ] Viewing comments by answer

@@ -9,7 +9,8 @@ class QuestionIndexItem extends React.Component {
     return(
       <div className="queston-item">
         <h3>this.title</h3>
-        <p>this.description</p>
+        <h4>this.most_upvoted_answer.author.username</h4>
+        <p>this.most_upvoted_answer.body</p>
       </div>
     );
   }

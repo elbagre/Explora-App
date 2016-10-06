@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app.jsx';
 import SessionContent from './session_form/session_content.jsx';
 import SessionForm from './session_form/session_form_container.js';
-import QuestionContainer from './questions/question_container.js';
+import HomeContainer from './questions/question_container.js';
 
 
 const Root = ({ store }) => {
@@ -26,11 +26,12 @@ const Root = ({ store }) => {
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App} onEnter={_redirectUnlessLoggedIn}>
-          <Route path="/home" component={QuestionContainer}/>
+          <Route path="/home" component={HomeContainer}/>
+          <Route path="/answer" component={HomeContainer}/>
         </Route>
         <Route path="/entry" component={SessionContent} onEnter={_redirectIfLoggedIn}>
-          <Route path="/signup" component={SessionForm} onEnter={_redirectIfLoggedIn}/>
-          <Route path="/login" component={SessionForm} onEnter={_redirectIfLoggedIn}/>
+          <Route path="/signup" component={SessionForm} />
+          <Route path="/login" component={SessionForm} />
         </Route>
       </Router>
     </Provider>

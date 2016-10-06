@@ -9,18 +9,19 @@ class QuestionIndex extends React.Component {
   }
 
   render() {
-    const questions = this.props.questions.map((question, idx) => (
+    console.log(this.props.questions);
+    const questions = this.props.questions.reverse().map((question, idx) => (
       <li className="question-box" key={idx}>
-        <h4 className="question-title">{question.title}</h4>
-        <h5 className="question-author">{question.author.username}</h5>
-        <text className="question-description">{question.description}</text>
+        <h3 className="question-title">{question.title}</h3>
+        <h4 className="question-author">{question.most_upvoted_author}</h4>
+        <p className="question-answer">{question.most_upvoted_answer.body}</p>
         <QuestionNav />
       </li>
     ));
     return (
       <div className="question-index">
         <h2>Top Explorations For You</h2>
-        <ul className="question-list">
+        <ul className="question-list group">
           {questions}
         </ul>
       </div>

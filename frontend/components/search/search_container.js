@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { createQuestion } from '../../actions/question_actions.js';
-import SearchBar from './search_bar.jsx';
+import SearchForm from './search_form.jsx';
 
 const mapStateToProps = (state) => {
   return ({
@@ -13,4 +13,4 @@ const mapDispatchToProps = (dispatch) => ({
   createQuestion: (question) => dispatch(createQuestion(question))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchForm);

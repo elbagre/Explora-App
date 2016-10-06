@@ -17,4 +17,18 @@ class Question < ActiveRecord::Base
   belongs_to :author,
   class_name: "User",
   foreign_key: :author_id
+
+  has_many :answers
+
+  attr_reader :most_upvoted_answer, :most_upvoted_author
+
+  def most_upvoted_answer
+    #NEED TO EDIT: Order by upvotes, as well as using id not full object
+    return if !self.answers
+    @most_upvoted_answer = self.answers.first
+  end
+
+  def most_upvoted_author
+    @most_upvoted_author = most_upvoted_answer.author.username
+  end
 end

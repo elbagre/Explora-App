@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store.js';
 import Root from './components/root.jsx';
-import * as Question from './util/question_api_util.js';
+import * as Answer from './util/answer_api_util.js';
 
 
 const success = data =>console.log(data);
-window.fetchSingleQuestion = (id) => Question.fetchSingleQuestion(id, success);
-window.fetchAllQuestions = () => Question.fetchAllQuestions(success);
-window.postQuestion = () => Question.postQuestion = (question, success);
+window.fetchAllAnswers = (id) => Answer.fetchAllAnswers(id, success);
+window.createAnswer = (answer) => Answer.createAnswer(answer, success);
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;

@@ -2,6 +2,9 @@
   width: 600px;
   margin: 0 auto;
   padding: 20px;
+  background: #fff;
+  float: left;
+  height: 100em;
 }
 
 .question-index > h2 {
@@ -68,4 +71,8 @@
 
 .question-links button:hover {
   border: 1px solid #4682B4;
+}
+
+.question-answer {
+  margin-bottom: 20px;
 }
