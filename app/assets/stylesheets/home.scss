@@ -11,69 +11,6 @@
   color: #800000;
 }
 
-.home-logo {
-  float: left;
-  width: 100px;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 24px;
-  font-family: helvetica;
-}
-
-.search-container {
-  position: relative;
-  margin: 10px;
-  float: left;
-  width: 400px;
-  background: transparent;
-  color: #aaa;
-  border-radius: 2px;
-}
-
-.search-container > p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #eee;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.search-form {
-  background: transparent;
-}
-
-.search-submit {
-  float: right;
-  padding: 5px;
-  background: #fff;
-  color: #2F4F4F;
-  font-size: 14px;
-  border: 1px solid #aaa;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-
-.search-submit:hover {
-  border-color: #2F4F4F;
-}
-
-.search-input {
-  background: transparent;
-  width: 295.3px;
-  float: left;
-  padding: 4px;
-  text-align: bottom;
-  border: 1px solid #ccc;
-  border-right: 0;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-
-}
-
-
 .home-links {
   float: left;
   width: 200px;

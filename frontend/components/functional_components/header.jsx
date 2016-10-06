@@ -6,7 +6,6 @@ const Header = ({currentUser, logout}) => {
     return (
       <div className="home-header group">
         <nav className="home-nav">
-          <logo className="home-logo">Explora</logo>
           <Search/>
           <ul className="home-links group">
             <li>Read</li>

@@ -43,9 +43,8 @@
 .signup {
   border-radius: 2px;
   color: #B22222;
-  width: 180px;
+  width: 200px;
   margin: 30px 68px 30px 48px;
-  padding: 10px;
   border: 1px solid #B22222;
   background: whitesmoke;
 }
@@ -53,15 +52,15 @@
 .login {
   background: whitesmoke;
   border-radius: 2px;
-  width: 180px;
+  width: 200px;
   color: #1E90FF;
   border: 1px solid #1E90FF;
   margin: 30px 48px 10px 48px;
-  padding: 10px;
 }
 
 .registration-links a {
   display: block;
+  padding: 10px;
 }
 
 .register-form {
@@ -103,10 +102,10 @@ input[type="email"], input[type="password"] {
 }
 
 .guest {
-  margin: 30px 48px;
+  margin: 30px 0 10px 50px;
   padding: 10px 20px;
-  float: right;
-  width: 200px;
+  float: left;
+  width: 160px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -114,4 +113,5 @@ input[type="email"], input[type="password"] {
   color: #4169E1;
   border: 1px solid #4169E1;
   background: whitesmoke;
+  cursor: pointer;
 }
