@@ -5,27 +5,29 @@ import HeaderContainer from './functional_components/header_container.js';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { focus: "modal" };
+    this.state = { modal: "modal" };
     this.handleClick = this.handleClick.bind(this);
     this.toggleModalFocus = this.toggleModalFocus.bind(this);
   }
 
   toggleModalFocus() {
-    if (this.state.focus === "modal") {
-      this.setState({ focus: "modal focused"});
+    if (this.state.modal === "modal") {
+      this.setState({ modal: "modal focused"});
     }
     console.log(this.state);
   }
 
   handleClick() {
-    this.setState({ focus: "modal"});
+    this.setState({ modal: "modal"});
   }
 
   render() {
     return (
       <div className="home">
-        <HeaderContainer toggleModalFocus={this.toggleModalFocus} />
-        <div className={this.state.focus} onClick={this.handleClick} />
+        <HeaderContainer
+          toggleModalFocus={this.toggleModalFocus}
+          modal={this.state.modal}/>
+        <div className={this.state.modal} onClick={this.handleClick} />
         <section className="home-main group">
           <SideBar className="home-left-sidebar"/>
           {this.props.children}
