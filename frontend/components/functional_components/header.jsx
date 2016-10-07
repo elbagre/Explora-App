@@ -17,11 +17,8 @@ class Header extends React.Component {
   }
 
   untoggleFocus() {
-    console.log(this.state.focus);
-    if (this.props.modal === "modal") {
       this.setState({ focus: "home-nav group"});
-    }
-    console.log(this.state.focus);
+      console.log(this.state.focus);
   }
 
   toggleFocus() {

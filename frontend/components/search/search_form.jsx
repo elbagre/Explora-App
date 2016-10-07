@@ -53,6 +53,7 @@ class SearchBar extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className="group">
         <form className="search-form" onSubmit={this.handleSubmit}>
