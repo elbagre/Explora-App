@@ -11,21 +11,20 @@ class Header extends React.Component {
     this.toggleFocus = this.toggleFocus.bind(this);
     this.untoggleFocus = this.untoggleFocus.bind(this);
   }
-
-  componentWillReceiveProps() {
-    this.untoggleFocus();
+  //
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.modal === "modal") {
+      this.untoggleFocus();
+    }
   }
 
   untoggleFocus() {
-      this.setState({ focus: "home-nav group"});
-      console.log(this.state.focus);
+    this.setState({ focus: "home-nav group"});
   }
 
   toggleFocus() {
-    if (this.state.focus === "home-nav group") {
       this.setState({ focus: "home-nav focused group" });
-    }
-    this.props.toggleModalFocus();
+      this.props.toggleModalFocus();
   }
 
   render () {
@@ -35,7 +34,7 @@ class Header extends React.Component {
           <nav className={this.state.focus}>
             <Search toggleFocus={this.toggleFocus}/>
             <ul className="home-links group">
-              <li>Read</li>
+              <li><Link to="/home">Read</Link></li>
               <li><Link to="/answer">Answer</Link></li>
               <li><button onClick={this.props.logout}>Logout</button></li>
             </ul>

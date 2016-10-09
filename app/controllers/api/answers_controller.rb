@@ -1,7 +1,6 @@
 class Api::AnswersController < ApplicationController
 
   def create
-    debugger
     @answer = Answer.new(answer_params)
 
     if @answer.save

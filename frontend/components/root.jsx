@@ -5,6 +5,7 @@ import App from './app.jsx';
 import SessionContent from './session_form/session_content.jsx';
 import SessionForm from './session_form/session_form_container.js';
 import HomeContainer from './questions/question_container.js';
+import AnswerPageContainer from './answer_page/answer_page_container.js';
 
 
 const Root = ({ store }) => {
@@ -27,7 +28,7 @@ const Root = ({ store }) => {
       <Router history={hashHistory}>
         <Route path="/" component={App} onEnter={_redirectUnlessLoggedIn}>
           <Route path="/home" component={HomeContainer}/>
-          <Route path="/answer" component={HomeContainer}/>
+          <Route path="/answer" component={AnswerPageContainer}/>
         </Route>
         <Route path="/entry" component={SessionContent} onEnter={_redirectIfLoggedIn}>
           <Route path="/signup" component={SessionForm} />

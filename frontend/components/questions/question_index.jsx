@@ -9,7 +9,7 @@ class QuestionIndex extends React.Component {
   }
 
   render() {
-    const questions = this.props.questions.reverse().map((question, idx) => (
+    const questions = this.props.questions.map((question, idx) => (
       <li className="question-box" key={idx}>
         <h3 className="question-title">{question.title}</h3>
         <h4 className="question-author">{question.most_upvoted_author}</h4>

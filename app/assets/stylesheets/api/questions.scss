@@ -4,7 +4,6 @@
   padding: 20px;
   background: #fff;
   float: left;
-  height: 100em;
 }
 
 .question-index > h2 {
@@ -38,7 +37,6 @@
 
 .question-links {
   padding-bottom: 15px;
-  vertical-align: bottom;
 }
 
 .question-links li {
@@ -59,6 +57,7 @@
 }
 
 .question-links button {
+  margin-right: 10px;
   font-size: 12px;
   padding: 5px;
   border-radius: 3px;

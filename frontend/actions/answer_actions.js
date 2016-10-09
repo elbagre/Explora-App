@@ -1,6 +1,6 @@
 export const REQUEST_ALL_ANSWERS = 'REQUEST_ALL_ANSWERS';
 export const RECEIVE_ALL_ANSWERS = 'RECEIVE_ALL_ANSWERS';
-export const RECEIVE_SINGLE_ANSWER = 'RECEIVE_SINGLE_QUESTION';
+export const RECEIVE_SINGLE_ANSWER = 'RECEIVE_SINGLE_ANSWER';
 export const CREATE_ANSWER = 'CREATE_ANSWER';
 
 export const requestAllAnswers = () => ({
@@ -13,7 +13,7 @@ export const receiveAllAnswers = (answers) => ({
 });
 
 export const receiveSingleAnswer = (answer) => ({
-  type: RECEIVE_SINGLE_QUESTION,
+  type: RECEIVE_SINGLE_ANSWER,
   answer
 });
 

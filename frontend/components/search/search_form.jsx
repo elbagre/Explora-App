@@ -38,7 +38,6 @@ class SearchBar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.toggleFocus();
     this.props.createQuestion({
       title: this.state.title,
       description: this.state.description,
@@ -53,7 +52,6 @@ class SearchBar extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className="group">
         <form className="search-form" onSubmit={this.handleSubmit}>

@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { modal: "modal" };
-    this.handleClick = this.handleClick.bind(this);
+    this.untoggleModal = this.untoggleModal.bind(this);
     this.toggleModalFocus = this.toggleModalFocus.bind(this);
   }
 
@@ -14,10 +14,9 @@ class App extends React.Component {
     if (this.state.modal === "modal") {
       this.setState({ modal: "modal focused"});
     }
-    console.log(this.state);
   }
 
-  handleClick() {
+  untoggleModal() {
     this.setState({ modal: "modal"});
   }
 
@@ -25,9 +24,10 @@ class App extends React.Component {
     return (
       <div className="home">
         <HeaderContainer
+          untoggleModal={this.untoggleModal}
           toggleModalFocus={this.toggleModalFocus}
           modal={this.state.modal}/>
-        <div className={this.state.modal} onClick={this.handleClick} />
+        <div className={this.state.modal} onClick={this.untoggleModal} />
         <section className="home-main group">
           <SideBar className="home-left-sidebar"/>
           {this.props.children}
