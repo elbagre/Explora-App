@@ -12,7 +12,7 @@ class QuestionIndex extends React.Component {
     const questions = this.props.questions.map((question, idx) => (
       <li className="question-box" key={idx}>
         <h3 className="question-title">{question.title}</h3>
-        <h4 className="question-author">{question.most_upvoted_author}</h4>
+        <h4 className="question-author">{question.most_upvoted_answer.author}</h4>
         <p className="question-answer">{question.most_upvoted_answer.body}</p>
         <QuestionNav />
       </li>

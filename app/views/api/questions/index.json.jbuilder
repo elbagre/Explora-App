@@ -1,5 +1,3 @@
-@questions.each do |question|
-  json.set! question.id do
-    json.partial! "api/questions/question", question: question
-  end
+json.array! @questions.each do |question|
+  json.partial! "api/questions/question", question: question
 end

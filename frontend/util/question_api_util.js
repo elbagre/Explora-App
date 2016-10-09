@@ -3,7 +3,7 @@ export const fetchAllQuestions = (success) => {
     method: 'GET',
     url: '/api/questions',
     success,
-    error: (error) => console.log("Error is here")
+    error: (error) => console.log(error)
   });
 };
 

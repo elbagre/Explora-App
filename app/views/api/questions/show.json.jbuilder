@@ -1,1 +1,13 @@
-json.extract! @question, :title, :description, :author, :answers, :id
+json.title @question.title
+json.description @question.description
+json.id @question.id
+json.author do
+  json.username @question.author.username
+  json.id @question.author.id
+end
+
+
+json.answers @question.answers.each do |answer|
+  json.author answer.author.username
+  json.body answer.body
+end

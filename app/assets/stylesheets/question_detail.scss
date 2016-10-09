@@ -1,0 +1,49 @@
+.question-detail {
+  display: block;
+  margin-left: 200px;
+  background: #fff;
+  height: 100em;
+}
+
+.question-detail > header {
+  height: 100px;
+  padding: 30px 20px 30px 0;
+}
+
+.question-detail h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.detail-answer {
+  display: block;
+  width: 800px;
+  background: transparent;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.detail-answer > h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.detail-answer > p {
+  margin: 10px 0;
+}
+
+.detail-links {
+  padding: 20px 0;
+  width: 790px;
+}
+.detail-links li a {
+  float: left;
+  margin-right: 10px;
+}
+
+.detail-links button {
+  padding: 5px;
+  background: blue;
+  font-size: 14px;
+}

@@ -3,6 +3,7 @@ class Answer < ActiveRecord::Base
   validates :body, length: { minimum: 20 }
 
   belongs_to :question
+  has_many :comments
 
   belongs_to :author,
   class_name: "User",
