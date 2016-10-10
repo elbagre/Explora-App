@@ -1,9 +1,17 @@
 import * as Questions from '../actions/question_actions.js';
 import * as API from '../util/question_api_util.js';
+import { hashHistory } from 'react-router';
 
 const QuestionMiddleware = ({getState, dispatch}) => (next) => (action) => {
-  const questionsSuccess = (questions) => dispatch(Questions.receiveAllQuestions(questions));
-  const questionSuccess = (question) => dispatch(Questions.receiveSingleQuestion(question));
+  const questionsSuccess = (questions) => {
+    dispatch(Questions.receiveAllQuestions(questions));
+    hashHistory.push(`/home`);
+  }
+  const questionSuccess = (question) => {
+    dispatch(Questions.receiveSingleQuestion(question));
+    hashHistory.push(`/question/${question.id}`)
+  }
+
   switch(action.type) {
     case Questions.REQUEST_ALL_QUESTIONS:
       API.fetchAllQuestions(questionsSuccess);
