@@ -8,6 +8,7 @@
   width: 500px;
   border: 1px solid #ccc;
   border-radius: 2px;
+  margin-bottom: 20px;
 }
 
 .answer-box .toggle {
@@ -46,13 +47,14 @@
 }
 
 .answer-header {
+  display: flex;
+  flex-direction: column;
   background: #eee;
   padding: 10px;
 }
 
-.answer-header > h5 {
-  width: 90%;
-  float: left;
+.answer-header > div > h5 {
+  width: 100%;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 5px;
@@ -68,7 +70,7 @@
   text-decoration: underline;
 }
 
-.answer-header > span {
+.answer-header > div > span {
   float: left;
   display: block;
   width: 38px;
@@ -79,6 +81,16 @@
   background-image: url(http://www.hotel-r.net/im/hotel/au/sir-francis-drake-20.jpg);
   background-size: contain;
   background-position: center;
+}
+
+.answer-header > a {
+  color: #aaa;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.answer-header > a:hover {
+  text-decoration: underline;
 }
 .answer-box {
 }

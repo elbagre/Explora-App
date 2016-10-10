@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   fetchSingleQuestion: id => dispatch(Question.requestSingleQuestion(id)),
-  createAnswer: () => dispatch(Answer.createAnswer()),
+  createAnswer: (answer) => dispatch(Answer.createAnswer(answer)),
   createComment: (comment) => dispatch(Comment.createComment(comment))
 });
 

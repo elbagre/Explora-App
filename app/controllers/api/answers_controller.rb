@@ -1,10 +1,12 @@
 class Api::AnswersController < ApplicationController
 
   def create
+    debugger
     @answer = Answer.new(answer_params)
 
     if @answer.save
-      render :index
+      @question = @answer.question
+      render "api/questions/show"
     else
       render @answer.errors.full_messages, status: 402
     end

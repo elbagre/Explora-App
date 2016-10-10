@@ -62,7 +62,7 @@ class AnswerPageIndexItem extends React.Component {
         <div className="answer-header group">
           <span />
           <h5>{this.props.currentUser.username}</h5>
-          <button>Add Bio</button>
+          <a>Add Bio</a>
         </div>
         <textarea className="answer-bio"
                   onChange={this.handleChange("bio")}

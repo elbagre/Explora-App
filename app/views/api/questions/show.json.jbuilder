@@ -7,7 +7,7 @@ json.author do
 end
 
 
-json.answers @question.answers.each do |answer|
+json.answers @question.answers.order(id: :desc).each do |answer|
   json.author answer.author.username
   json.body answer.body
 end
