@@ -9,8 +9,8 @@ topic forums that connect users through questions and answers.
 - [X] Create accounts, log in, and access the main page
 - [ ] A production README, replacing this README
 - [X] Hosting on Heroku
-- [ ] Ask Questions
-- [ ] Answer Questions and Comment on Answers
+- [x] Ask Questions
+- [x] Answer Questions and Comment on Answers
 - [ ] Search Questions
 - [ ] Access questions by tag/topic
 - [ ] BONUS: Up/down vote answers to questions, order questions by popularity
@@ -57,7 +57,7 @@ topic forums that connect users through questions and answers.
 
 - [x] `Question` model
 - [x] Seed database with a small amount of test data
-- [ ] CRUD API for Questions (`QuestionsController`)
+- [x] CRUD API for Questions (`QuestionsController`)
 - [x] JBuilder views for questions
 - Question components and respective Redux loops
   - [x] `QuestionsIndex`
@@ -73,15 +73,15 @@ be accessed through their respective components and be read, edited, and
 destroyed via the API.
 
 - [X] `Answer` model
-- [ ] Seed database with a small amount of test data
-- [ ] CRUD API for Answers and Comments (`AnswersController`, `CommentsController`)
+- [x] Seed database with a small amount of test data
+- [x] CRUD API for Answers and Comments (`AnswersController`, `CommentsController`)
 - [X] JBuilder views for comments and answers
 - [X] Adding answers requires a question
 - [ ] Adding comments requires a question
-- [ ] Viewing answers by question
+- [x] Viewing answers by question
 - [ ] Viewing comments by answer
-- [ ] Style components
-- [ ] Seed answers and comments
+- [x] Style components
+- [] Seed answers and comments
 
 ### Phase 4: Tags (1 days)
 

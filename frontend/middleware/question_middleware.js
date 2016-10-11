@@ -5,7 +5,6 @@ import { hashHistory } from 'react-router';
 const QuestionMiddleware = ({getState, dispatch}) => (next) => (action) => {
   const questionsSuccess = (questions) => {
     dispatch(Questions.receiveAllQuestions(questions));
-    hashHistory.push(`/home`);
   }
   const questionSuccess = (question) => {
     dispatch(Questions.receiveSingleQuestion(question));

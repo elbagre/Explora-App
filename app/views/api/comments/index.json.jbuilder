@@ -1,3 +1,3 @@
-json.array! @questions.each do |question|
-  json.partial! "api/comments/comment" question: question
+json.array! @comments.each do |comment|
+  json.partial! "api/comments/comment", comment: comment
 end

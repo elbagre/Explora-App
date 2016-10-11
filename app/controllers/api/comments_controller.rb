@@ -3,14 +3,14 @@ class Api::CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
 
     if @comment.save
-      render :index
+      render :show
     else
       render @comment.errors.full_messages, status: 422
     end
   end
 
   def index
-    @answers = Comment.where(answer_id: params[:answer_id])
+    @comments = Comment.where(answer_id: params[:answer_id])
     render :index
   end
 
@@ -34,4 +34,5 @@ class Api::CommentsController < ApplicationController
 
   def comment_params
     params.require(:comment).permit(:author_id, :answer_id, :body)
+  end
 end

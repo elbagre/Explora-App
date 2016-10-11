@@ -16,12 +16,18 @@
 
 .question-box {
   border-bottom: 1px solid #ccc;
+  padding-top: 20px;
 }
 
 .question-title {
   font-size: 18px;
   font-weight: bold;
-  padding: 20px 0 5px 0;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+}
+
+.question-title:hover {
+  text-decoration: underline;
 }
 
 .question-author {
@@ -73,5 +79,6 @@
 }
 
 .question-answer {
+  word-wrap: break-word;
   margin-bottom: 20px;
 }

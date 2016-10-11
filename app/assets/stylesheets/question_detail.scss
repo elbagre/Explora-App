@@ -3,9 +3,12 @@
   padding-top: 10px;
   margin-left: 220px;
   height: 100em;
+  width: 600px;
+  overflow: hidden;
 }
 
 .question-detail header {
+  padding-top: 15px;
 }
 
 .question-detail > header > h2 {
@@ -32,11 +35,15 @@
 }
 
 .detail-links button {
+  margin-right: 10px;
+  font-size: 12px;
   padding: 5px;
-  background: #CFEBFE;
-  color: #2378B0;
-  border-radius: 2px;
-  border: 1px solid #78AED2;
+  border-radius: 3px;
+  background: #F0FFFF;
+  color: #4682B4;
+  font-weight: bold;
+  border: 1px solid #ADD8E6;
+  cursor: pointer;
 }
 
 .detail-links button:hover {
@@ -51,15 +58,17 @@
   text-decoration: underline;
 }
 
-
-
 .answer-list {
   display: block;
   width: 600px;
 }
 
 .detail-answer {
+  display: block;
+  width: 600px;
   border-top: 1px solid #ccc;
+  height: auto;
+  word-wrap: break-word;
 }
 
 .detail-answer h5 {
@@ -72,13 +81,20 @@
   align-items: center;
 }
 
-.detail-answer-header > span {
+span {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin: 10px;
   background-image: url(http://www.hotel-r.net/im/hotel/au/sir-francis-drake-20.jpg);
   background-size: contain;
   background-position: center;
+}
+
+.answer-list > h4 {
+  margin: 30px 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+
 }

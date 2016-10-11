@@ -1,4 +1,5 @@
 import React from 'react';
+import { hashHistory } from 'react-router';
 
 class AnswerPageIndexItem extends React.Component {
   constructor(props) {
@@ -8,6 +9,7 @@ class AnswerPageIndexItem extends React.Component {
       answer: "",
       toggle: "answer-box"
     };
+    this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleToggle = this.handleToggle.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,6 +35,10 @@ class AnswerPageIndexItem extends React.Component {
     };
   }
 
+  handleClick() {
+    hashHistory.push(`/question/${this.props.question.id}`);
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     this.props.createAnswer({
@@ -50,30 +56,32 @@ class AnswerPageIndexItem extends React.Component {
   render() {
     return (
     <article className={this.state.toggle}>
-        <h4 className="question-title">{this.props.question.title}</h4>
+        <h4 className="question-title"
+            onClick={this.handleClick}
+            >{this.props.question.title}</h4>
         <p className="question-description">{this.props.question.description}</p>
       <ul className="question-links group">
         <li><button className="toggle" onClick={this.handleToggle}>Answer</button></li>
         <li><button>Pass</button></li>
-        <li><a>{this.state.count} Answers</a></li>
+        <li onClick={this.handleClick}><a>{this.state.count} Answers</a></li>
         <li><a>Downvote</a></li>
       </ul>
-      <form className="answer-form" onSubmit={this.handleSubmit}>
-        <div className="answer-header group">
+      <form className="hidden-form" onSubmit={this.handleSubmit}>
+        <div>
           <span />
-          <h5>{this.props.currentUser.username}</h5>
-          <a>Add Bio</a>
+          <div>
+            <h5>{this.props.currentUser.username}</h5>
+            <a>Add Bio</a>
+          </div>
         </div>
         <textarea className="answer-bio"
-                  onChange={this.handleChange("bio")}
-                  value={this.state.bio} />
+          onChange={this.handleChange("bio")}
+          value={this.state.bio} />
         <textarea className="answer-input"
-                  onChange={this.handleChange("answer")}
-                  placeholder="Write your answer"
-                  value={this.state.answer} />
-        <div>
-          <input type="submit" value="Submit" />
-        </div>
+          onChange={this.handleChange("answer")}
+          placeholder="Write your answer"
+          value={this.state.answer} />
+        <input type="submit" value="Submit" />
       </form>
       </article>
     );

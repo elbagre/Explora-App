@@ -30,6 +30,18 @@ button, input[type="submit"], link {
   cursor: pointer;
 }
 
+button {
+  margin-right: 10px;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 3px;
+  background: #F0FFFF;
+  color: #4682B4;
+  font-weight: bold;
+  border: 1px solid #ADD8E6;
+  cursor: pointer;
+}
+
 .group:after {
   content: "";
   clear: both;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from '../search/search_container.js';
-import { Link } from 'react-router';
+import { Link, hashHistory } from 'react-router';
 
 class Header extends React.Component {
   constructor(props) {
@@ -16,6 +16,10 @@ class Header extends React.Component {
     if (nextProps.modal === "modal") {
       this.untoggleFocus();
     }
+  }
+
+  handleClick(route) {
+    return () => hashHistory.push(route);
   }
 
   untoggleFocus() {
@@ -34,9 +38,15 @@ class Header extends React.Component {
           <nav className={this.state.focus}>
             <Search toggleFocus={this.toggleFocus}/>
             <ul className="home-links group">
-              <li><Link to="/home">Read</Link></li>
-              <li><Link to="/answer">Answer</Link></li>
-              <li><button onClick={this.props.logout}>Logout</button></li>
+              <li className="read" onClick={this.handleClick("/home")}>
+                <img src="/assets/book-open-page-red.png" />
+                <h4 to="/home">Read</h4>
+              </li>
+              <li className="answer" onClick={this.handleClick("/answer")}>
+                <img src="/assets/lead-pencil-grey.png" />
+                <h4 to="/answer">Answer</h4>
+              </li>
+              <li onClick={this.props.logout}>Logout</li>
             </ul>
           </nav>
         </div>

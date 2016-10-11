@@ -10,4 +10,5 @@ end
 json.answers @question.answers.order(id: :desc).each do |answer|
   json.author answer.author.username
   json.body answer.body
+  json.id answer.id
 end
