@@ -3,5 +3,6 @@ json.answers do
     json.author answer.author.username
     json.body answer.body
     json.id answer.id
+    json.image asset_path(answer.image.url)
   end
 end

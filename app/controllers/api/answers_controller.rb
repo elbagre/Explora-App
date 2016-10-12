@@ -4,8 +4,7 @@ class Api::AnswersController < ApplicationController
     @answer = Answer.new(answer_params)
 
     if @answer.save
-      @question = @answer.question
-      render "api/questions/show"
+      render :show
     else
       render @answer.errors.full_messages, status: 402
     end
@@ -34,6 +33,6 @@ class Api::AnswersController < ApplicationController
   private
 
   def answer_params
-    params.require(:answer).permit(:author_id, :question_id, :body)
+    params.require(:answer).permit(:author_id, :question_id, :body, :image)
   end
 end

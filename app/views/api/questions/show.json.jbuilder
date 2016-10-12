@@ -7,8 +7,9 @@ json.author do
 end
 
 
-json.answers @question.answers.order(id: :desc).each do |answer|
+json.answers @answers.each do |answer|
   json.author answer.author.username
   json.body answer.body
   json.id answer.id
+  json.image asset_path(answer.image.url)
 end

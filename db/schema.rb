@@ -11,19 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161009003115) do
+ActiveRecord::Schema.define(version: 20161011190621) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "answers", force: :cascade do |t|
-    t.integer  "author_id",               null: false
-    t.integer  "question_id",             null: false
-    t.text     "body",                    null: false
-    t.integer  "upvotes",     default: 0
-    t.integer  "downvotes",   default: 0
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.integer  "author_id",                      null: false
+    t.integer  "question_id",                    null: false
+    t.text     "body",                           null: false
+    t.integer  "upvotes",            default: 0
+    t.integer  "downvotes",          default: 0
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "answers", ["author_id"], name: "index_answers_on_author_id", using: :btree

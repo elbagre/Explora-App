@@ -6,7 +6,7 @@ const CommentMiddleware = ({ getState, dispatch }) => next => action => {
   switch(action.type) {
     case Action.CREATE_COMMENT:
       API.createComment(action.comment, () => next(action));
-      return next(action);
+      break;
     case Action.REQUEST_ALL_COMMENTS:
       API.fetchAllComments(action.answer_id, commentsSuccess);
       return next(action);

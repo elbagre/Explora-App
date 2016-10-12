@@ -24,12 +24,18 @@ class Question < ActiveRecord::Base
 
   def most_upvoted_answer
     #NEED TO EDIT: Order by upvotes, as well as using id not full object
-    return "" if self.answers.empty?
-    @most_upvoted_answer = self.answers.last.body
+    return {} if self.answers.empty?
+    @most_upvoted_answer = self.answers.last
   end
 
   def most_upvoted_author
     return "" if self.answers.empty?
-    @most_upvoted_author = self.answers.last.author.username
+    @most_upvoted_author = self.most_upvoted_answer.author.username
   end
+
+  def image
+    return "/images/original/missing.png" if self.answers.empty?
+    @most_upvoted_answer.image
+  end
+
 end

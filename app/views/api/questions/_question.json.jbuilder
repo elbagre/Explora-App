@@ -7,7 +7,6 @@ json.author do
   json.id question.author_id
 end
 
-json.most_upvoted_answer do
-  json.body question.most_upvoted_answer
-  json.author question.most_upvoted_author
-end
+json.most_upvoted_answer question.most_upvoted_answer
+json.most_upvoted_author question.most_upvoted_author
+json.image question.image

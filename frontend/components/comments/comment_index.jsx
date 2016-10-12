@@ -7,30 +7,40 @@ class CommentIndex extends React.Component {
     this.state = { body: "" };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.comments = this.comments.bind(this);
   }
 
   handleChange(e) {
     this.setState({ body: e.currentTarget.value });
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
+    e.preventDefault();
     this.props.createComment({
       answer_id: this.props.answerId,
       author_id: this.props.currentUser.id,
       body: this.state.body
     });
+    this.setState({ body: ""});
+    this.props.requestAllComments(this.props.answerId);
   }
 
-  componentDidMount() {
-    this.props.requestAllComments(this.props.answer_id);
+  comments(comments) {
+    return (
+      comments.filter( (comment) => {
+        if (comment.answer_id === this.props.answerId) {
+          return comment;
+        }
+      })
+    );
   }
 
   render() {
-    const comments = this.props.comments.map( (comment, idx) => (
+    const comments = this.comments(this.props.comments).map( (comment, idx) => (
       <CommentIndexItem comment={comment} key={idx} />
     ));
     return(
-      <div className="comments">
+      <div className={this.props.toggle}>
         <div className="comment-form">
           <span />
           <form onSubmit={this.handleSubmit}>

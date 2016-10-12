@@ -6,12 +6,13 @@ import { hashHistory } from 'react-router';
 const AnswerMiddleware = ({ getState, dispatch }) => (next) => (action) => {
   switch (action.type) {
     case Answer.CREATE_ANSWER:
-      const answerSuccess = () => {
-        dispatch(Question.requestSingleQuestion(action.answer.question_id));
-        hashHistory.push(`/question/${action.answer.question_id}`);
+      const answerSuccess = (data) => {
+        dispatch(Answer.receiveSingleAnswer(data));
+        hashHistory.push(`/question/${data.question_id}`);
       }
       API.createAnswer(action.answer, answerSuccess);
       next(action);
+      break;
     case Answer.REQUEST_ALL_ANSWERS:
       API.fetchAllAnswers(action.answer.question_id, (answers) => {
         dispatch(Answer.receiveAllAnswers(answers));
@@ -19,6 +20,7 @@ const AnswerMiddleware = ({ getState, dispatch }) => (next) => (action) => {
         }
       );
       return next(action);
+      break;
     default:
       return next(action);
   }

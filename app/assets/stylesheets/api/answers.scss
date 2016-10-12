@@ -93,3 +93,31 @@
 .answer-box {
   padding-top: 20px;
 }
+
+.form-style {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 598px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  color: #aaa;
+  padding: 5px 0;
+}
+
+.form-style > li {
+  padding: 5px;
+  text-align: center;
+}
+
+
+.form-style button {
+  background: #fff;
+  border: 0;
+  color: inherit;
+}
+
+.form-style > li:last-child {
+  margin: 0 0 0 400px;
+  padding: 0;
+}

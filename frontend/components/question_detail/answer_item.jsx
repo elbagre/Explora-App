@@ -6,35 +6,49 @@ class AnswerItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: "comment-hidden",
+      toggle: "comments hidden",
     };
     this.handleClick = this.handleClick.bind(this);
+    this.image = this.image.bind(this);
   }
 
   handleClick() {
-    if (this.state.toggle !== "comment") {
+    if (this.state.toggle !== "comments") {
       this.setState({
-        toggle: "comment",
+        toggle: "comments",
       });
+      this.props.requestAllComments(this.props.answer.id);
+    } else {
+      this.setState({ toggle: "comments hidden"});
     }
-    this.props.requestAllComments(this.props.answer.id);
+  }
+
+  image() {
+    console.log(this.props.answer.image);
+    if (this.props.answer.image !== "/images/original/missing.png") {
+      return (
+        <div className="cover-photo">
+          <img src={this.props.answer.image} />
+        </div>
+      );
+    }
   }
 
   render() {
-    console.log(this.state.toggle);
     return (
       <article className="detail-answer">
         <div className="detail-answer-header">
           <span></span>
           <h5>{this.props.answer.author}</h5>
         </div>
+        {this.image()}
         <p>{this.props.answer.body}</p>
         <ul className="detail-links">
           <li><button className="links-button">Upvote</button></li>
           <li><a>Downvote</a></li>
           <li><a onClick={this.handleClick}>Comment</a></li>
         </ul>
-        <CommentIndex className={this.state.toggle} answerId={this.props.answer.id} />
+        <CommentIndex toggle={this.state.toggle} answerId={this.props.answer.id} />
       </article>
     );
   }

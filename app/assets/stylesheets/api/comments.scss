@@ -1,5 +1,12 @@
 .comments {
   background: #eee;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.comments h5 {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .comment-form {
@@ -41,6 +48,6 @@
   padding-bottom: 5px;
 }
 
-.comment-hidden > .comments {
+.hidden {
   display: none;
 }

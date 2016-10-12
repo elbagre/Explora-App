@@ -1,8 +1,11 @@
-export const createAnswer = (answer, success) => {
+export const createAnswer = (formData, success) => {
   $.ajax({
     method: 'POST',
     url: `/api/answers`,
-    data: {answer},
+    dataType: 'json',
+    contentType: false,
+    processData: false,
+    data: formData,
     success,
     error: () => console.log("MESSED UP")
   });
