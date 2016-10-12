@@ -24,7 +24,6 @@ class AnswerItem extends React.Component {
   }
 
   image() {
-    console.log(this.props.answer.image);
     if (this.props.answer.image !== "/images/original/missing.png") {
       return (
         <div className="cover-photo">

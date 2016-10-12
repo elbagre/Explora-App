@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBar from './functional_components/sidebar.jsx';
+import SideBarContainer from './functional_components/sidebar_container.js';
 import HeaderContainer from './functional_components/header_container.js';
 
 class App extends React.Component {
@@ -29,7 +29,7 @@ class App extends React.Component {
           modal={this.state.modal}/>
         <div className={this.state.modal} onClick={this.untoggleModal} />
         <section className="home-main group">
-          <SideBar className="home-left-sidebar"/>
+          <SideBarContainer className="home-left-sidebar"/>
           {this.props.children}
         </section>
       </div>

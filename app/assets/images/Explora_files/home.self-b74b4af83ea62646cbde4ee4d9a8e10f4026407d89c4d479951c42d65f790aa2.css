@@ -1,0 +1,93 @@
+/* line 1, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.home-header {
+  display: block;
+  background: #fff;
+  border-top: 2px solid #800000;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 13, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.home-nav {
+  width: 1000px;
+  margin: 0 auto;
+  color: #800000;
+}
+
+/* line 19, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.home-links {
+  background: #fff;
+  float: left;
+  width: 300px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* line 27, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.home-links > li {
+  cursor: pointer;
+  float: left;
+  padding: 10px 10px;
+}
+
+/* line 33, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.home-links > li:hover {
+  background: #eee;
+}
+
+/* line 37, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+img {
+  float: left;
+  align-items: center;
+  color: red;
+  height: auto;
+  width: auto;
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 5px;
+}
+
+/* line 48, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.read h4, .answer h4 {
+  padding: 2px 0;
+  float: left;
+}
+
+/* line 53, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.home-header li button {
+  color: #800000;
+  background: whitesmoke;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+/* line 60, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.home-header div {
+  float: left;
+}
+
+/* line 64, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.home-main {
+  z-index: 1;
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+}
+
+/* line 72, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/home.scss */
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.75;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}

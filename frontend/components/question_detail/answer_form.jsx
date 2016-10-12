@@ -10,9 +10,6 @@ class AnswerForm extends React.Component {
       imageUrl: null,
       toggle: "answer-box"
     };
-    this.bold = this.bold.bind(this);
-    this.italic = this.italic.bind(this);
-    this.list = this.list.bind(this);
     this.updateFile = this.updateFile.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleToggle = this.handleToggle.bind(this);
@@ -24,30 +21,6 @@ class AnswerForm extends React.Component {
       this.setState({ toggle: "answer-box toggled" });
     } else {
       this.setState({ toggle: "answer-box"});
-    }
-  }
-
-  bold() {
-    if (this.state.bold === "bold") {
-      this.setState({ bold: "bold" });
-    } else {
-      this.setState({ bold: ""});
-    }
-  }
-
-  italic() {
-    if (this.state.italic === "") {
-      this.setState({ italic: "italic" });
-    } else {
-      this.setState({ italic: "" });
-    }
-  }
-
-  list() {
-    if (this.state.list === "") {
-      this.setState({ list: "list"});
-    } else {
-      this.setState({ italic: ""});
     }
   }
 
@@ -105,9 +78,6 @@ class AnswerForm extends React.Component {
               </div>
             </div>
             <ul className="form-style">
-              <li onClick={this.bold}>B</li>
-              <li onClick={this.italic}>I</li>
-              <li onClick={this.list}>List</li>
               <li><input type="file"
                          onChange={this.updateFile} /></li>
             </ul>

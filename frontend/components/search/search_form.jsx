@@ -1,4 +1,5 @@
 import React from 'react';
+import { hashHistory } from 'react-router';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -11,6 +12,10 @@ class SearchBar extends React.Component {
         describe: "describe-hidden"
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  home() {
+    hashHistory.push('/home');
   }
 
   handleClick(type) {
@@ -55,7 +60,7 @@ class SearchBar extends React.Component {
     return (
       <div className="group">
         <form className="search-form" onSubmit={this.handleSubmit}>
-          <logo className="search-logo">Explora</logo>
+          <logo onClick={this.home} className="search-logo">Explora</logo>
           <input className="search-input"
                  type="text"
                  value={this.state.title}

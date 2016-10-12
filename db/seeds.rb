@@ -1,4 +1,26 @@
 icon_path = "#{Rails.root}/app/assets/images/"
+TagTopic.destroy_all
+
+Topic.destroy_all
+africa = Topic.create!(name: "Africa")
+  sa = Topic.create(name: "South Africa", parent_id: africa.id)
+  zbar = Topic.create(name: "Zanzibar", parent_id: africa.id)
+america = Topic.create!(name: "America")
+  states = Topic.create!(name: "The States", parent_id: america.id)
+  bol = Topic.create!(name: "Bolivia", parent_id: america.id)
+  col = Topic.create!(name: "Colombia", parent_id: america.id)
+  per = Topic.create!(name: "Peru", parent_id: america.id)
+  cancun = Topic.create!(name: "Cancun", parent_id: america.id)
+europe = Topic.create!(name: "Europe")
+  france = Topic.create!(name: "France", parent_id: europe.id )
+    louvre = Topic.create!(name: "Louvre", parent_id: france.id )
+  bruss = Topic.create!(name: "Brussels", parent_id: europe.id )
+  ibiza = Topic.create!(name: "Ibiza", parent_id: europe.id )
+  croatia = Topic.create!(name: "Croatia", parent_id: europe.id )
+asia = Topic.create!(name: "Asia")
+  jap = Topic.create!(name: "Japan", parent_id: asia.id)
+    tok = Topic.create!(name: "Tokyo", parent_id: jap.id)
+australia = Topic.create!(name: "Australia")
 
 User.destroy_all
 guest = User.create!(username: "guest", email: "guest@guest.com", password: "guests")

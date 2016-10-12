@@ -3,9 +3,11 @@ import { applyMiddleware } from 'redux';
 import QuestionMiddleware from './question_middleware.js';
 import AnswerMiddleware from './answer_middleware.js';
 import CommentMiddleware from './comment_middleware.js';
+import TopicMiddleware from './topic_middleware.js';
 
 const RootMiddleware = applyMiddleware(
-  SessionMiddleware, QuestionMiddleware, AnswerMiddleware, CommentMiddleware
+  SessionMiddleware, QuestionMiddleware, AnswerMiddleware, CommentMiddleware,
+  TopicMiddleware
 );
 
 export default RootMiddleware;

@@ -1,0 +1,98 @@
+/* line 1, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-index {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  float: left;
+}
+
+/* line 9, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-index > h2 {
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+  padding: 20px 0 10px 0;
+}
+
+/* line 17, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-box {
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+/* line 22, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+}
+
+/* line 29, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-title:hover {
+  text-decoration: underline;
+}
+
+/* line 33, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-author {
+  font-size: 16px;
+  color: #2F4F4F;
+  padding-bottom: 20px;
+}
+
+/* line 39, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-description {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 44, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-links {
+  padding-bottom: 15px;
+}
+
+/* line 48, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-links li {
+  display: block;
+  float: left;
+}
+
+/* line 53, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-links a {
+  display: block;
+  margin: 5px 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* line 60, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* line 65, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-links button {
+  margin-right: 10px;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 3px;
+  background: #F0FFFF;
+  color: #4682B4;
+  font-weight: bold;
+  border: 1px solid #ADD8E6;
+  cursor: pointer;
+}
+
+/* line 77, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-links button:hover {
+  border: 1px solid #4682B4;
+}
+
+/* line 81, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/questions.scss */
+.question-answer {
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}

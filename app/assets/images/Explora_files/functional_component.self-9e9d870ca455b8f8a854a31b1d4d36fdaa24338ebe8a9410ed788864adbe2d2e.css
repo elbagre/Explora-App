@@ -1,0 +1,122 @@
+/* line 1, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.root-header {
+  text-align: center;
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* line 8, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.root-header h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #800000;
+  padding-top: 100px;
+  margin: 0 20px 20px 20px;
+}
+
+/* line 16, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.root-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2F4F4F;
+  margin: 20px;
+}
+
+/* line 23, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.footer {
+  margin: 0 auto;
+  color: #aaa;
+  padding: 10px 20px;
+  background: #eee;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  width: 560px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* line 35, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.footer > ul {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 42, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* line 47, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.sidebar {
+  padding-top: 33px;
+  margin-right: 20px;
+  float: left;
+  width: 180px;
+  background: #fff;
+  height: 100em;
+}
+
+/* line 56, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.sidebar li {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+/* line 61, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.sidebar ul {
+  float: left;
+  width: 180px;
+  padding-bottom: 100px;
+}
+
+/* line 67, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.sidebar h3 {
+  float: left;
+  width: 82px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* line 75, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.trending h3 {
+  width: 165px;
+}
+
+/* line 79, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.feeds p {
+  font-size: 12.5px;
+  margin-bottom: 5px;
+  padding-bottom: 9px;
+  float: right;
+  color: #aaa;
+  text-align: right;
+  width: 83px;
+}
+
+/* line 89, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.feeds li:first-child {
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+/* line 94, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.feeds p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* line 99, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.trending {
+  padding-right: 5px;
+}
+
+/* line 103, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/functional_component.scss */
+.sidebar li:hover {
+  color: #3D7EBF;
+  cursor: pointer;
+}

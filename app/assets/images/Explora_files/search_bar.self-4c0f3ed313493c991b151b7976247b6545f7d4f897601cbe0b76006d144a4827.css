@@ -1,0 +1,117 @@
+.search-logo {
+  display: block;
+  float: left;
+  width: 100px;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #800000;
+  font-family: helvetica;
+}
+
+.search-form {
+  padding: 10px;
+  float: left;
+  background: #fff;
+}
+
+.search-submit {
+  float: left;
+  padding: 5px;
+  background: #fff;
+  color: #2F4F4F;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.search-submit:hover {
+  border-color: #2F4F4F;
+}
+
+.search-input {
+  background: #eee;
+  color: #C0C2C4;
+  font-weight: normal;
+  width: 295.3px;
+  float: left;
+  padding: 4px;
+  text-align: bottom;
+  border: 1px solid #ccc;
+  border-right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+
+}
+
+.describe-hidden {
+  display: none;
+}
+
+.focused ul {
+  display: none;
+}
+
+.focused form {
+  padding-right: 0;
+  width: 900px;
+  display: block;
+  float: left;
+}
+
+.focused input[type="text"] {
+  width: 600px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.focused input[type="submit"] {
+  margin: 0 0 0 10px;
+  background: #8AB6E2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  border-color: #8AB6E2;
+}
+
+.true {
+  background: #f00;
+}
+
+.toggle {
+  margin: 13px 0;
+  float: left;
+  font-family: sans-serif;
+  display: none;
+  background: #fff;
+  color: #ccc;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 12px;
+  font-stretch: expanded;
+  cursor: pointer;
+}
+
+.describe-toggled {
+  display: block;
+  width: 598px;
+  margin: 0 0 10px 120px;
+  height: 60px auto;
+  padding: 5px 5px 15px 5px;
+  background: #eee;
+  border: 1px solid #ccc;
+  color: #aaa;
+  resize: vertical;
+}
+
+.focused button {
+  display: block;
+}
+
+.focused {
+  display: block;
+}

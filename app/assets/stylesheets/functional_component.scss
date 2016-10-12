@@ -45,28 +45,38 @@
 }
 
 .sidebar {
+  padding-left: 20px;
   padding-top: 33px;
-  margin-right: 20px;
+  margin-right: 40px;
   float: left;
-  width: 180px;
+  width: 100px;
   background: #fff;
   height: 100em;
+  font-size: 14px;
 }
 
 .sidebar li {
-  font-size: 14px;
   padding-bottom: 15px;
+  width: 100%;
+}
+
+.feeds > ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid #ccc;
 }
 
 .sidebar ul {
   float: left;
-  width: 180px;
+  width: 130px;
   padding-bottom: 100px;
 }
 
 .sidebar h3 {
   float: left;
-  width: 82px;
+  width: 50px;
   padding-bottom: 10px;
   margin-bottom: 5px;
   font-weight: bold;
@@ -83,12 +93,11 @@
   float: right;
   color: #aaa;
   text-align: right;
-  width: 83px;
+  width: 40px;
 }
 
 .feeds li:first-child {
   padding-top: 15px;
-  border-top: 1px solid #ccc;
 }
 
 .feeds p:hover {

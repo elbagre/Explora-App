@@ -1,0 +1,61 @@
+/* line 1, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/comments.scss */
+.comments {
+  background: #eee;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+/* line 7, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/comments.scss */
+.comments h5 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 12, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/comments.scss */
+.comment-form {
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 18, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/comments.scss */
+.comments span {
+  width: 35px;
+  height: 35px;
+  max-width: 35px;
+  max-height: 35px;
+  margin: 5px 10px;
+}
+
+/* line 26, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/comments.scss */
+.comment-form input[type="text"] {
+  background: #fff;
+  padding: 5px;
+  border-radius: 2px;
+  width: 430px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* line 35, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/comments.scss */
+.comment-form input[type="submit"] {
+  padding: 5px;
+  margin: 10px;
+  background: #6495ED;
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* line 43, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/comments.scss */
+.comment-item {
+  font-size: 14px;
+  width: 560px;
+  padding-left: 40px;
+  display: flex;
+  padding-bottom: 5px;
+}
+
+/* line 51, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/comments.scss */
+.hidden {
+  display: none;
+}

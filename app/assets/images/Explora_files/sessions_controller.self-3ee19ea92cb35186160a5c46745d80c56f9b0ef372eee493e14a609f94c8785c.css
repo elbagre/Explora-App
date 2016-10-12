@@ -1,0 +1,123 @@
+/* line 5, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.session-content {
+  height: 100vh;
+  font-family: helvetica;
+  background-image: url("http://payload336.cargocollective.com/1/17/574234/9036849/DSC_0474-copy_2848.JPG");
+  background-size: 2000px 1420px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 14, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.registration {
+  margin: 0 auto;
+  background: #fff;
+  color: white;
+  font-weight: bold;
+  width: 600px;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+}
+
+/* line 28, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.registration-links {
+  width: 300px;
+  height: 300px;
+  float: left;
+  border-right: 1px solid #ccc;
+}
+
+/* line 35, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.terms {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  margin: 0 20px 0 48px;
+}
+
+/* line 43, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.signup {
+  border-radius: 2px;
+  color: #B22222;
+  width: 200px;
+  margin: 30px 68px 30px 48px;
+  border: 1px solid #B22222;
+  background: whitesmoke;
+}
+
+/* line 52, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.login {
+  background: whitesmoke;
+  border-radius: 2px;
+  width: 200px;
+  color: #1E90FF;
+  border: 1px solid #1E90FF;
+  margin: 30px 48px 10px 48px;
+}
+
+/* line 61, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.registration-links a {
+  display: block;
+  padding: 10px;
+}
+
+/* line 66, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.register-form {
+  margin: 10px 48px;
+  display: block;
+  width: 200px;
+  float: right;
+}
+
+/* line 73, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.register-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+/* line 83, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.register-form input[type="text"],
+input[type="email"], input[type="password"] {
+  background: #eee;
+  border: 1px solid #aaa;
+  color: #aaa;
+  width: 200px;
+  border-radius: 2px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+/* line 95, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.register-form input[type='submit'] {
+  background: #4682B4;
+  display: block;
+  float: right;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+/* line 104, /Users/appacademy/Desktop/Full-Stack-Proposal/app/assets/stylesheets/api/sessions_controller.scss */
+.guest {
+  margin: 30px 0 10px 50px;
+  padding: 10px 20px;
+  float: left;
+  width: 160px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: helvetica;
+  color: #4169E1;
+  border: 1px solid #4169E1;
+  background: whitesmoke;
+  cursor: pointer;
+}
