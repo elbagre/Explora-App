@@ -17,8 +17,18 @@ class Api::QuestionsController < ApplicationController
   end
 
   def index
-    @questions = Question.joins(:answers).group(:id)
-    render :index
+    if params[:query]
+      if params[:query].empty?
+        @questions = []
+      else
+        query = "#{params[:query]}%".upcase
+        @questions = Question.where("UPPER(title) LIKE ?", query)
+      end
+      render :search_index
+    else
+      @questions = Question.joins(:answers).having("COUNT(*) > 0").group("questions.id").preload(:author, answers: :author)
+      render :index
+    end
   end
 
   def destroy

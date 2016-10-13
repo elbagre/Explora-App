@@ -56,8 +56,8 @@ q_one = Question.create!(title: "When are the best times to visit Japan?", descr
 
 
 q_two = Question.create!(title: "What's the best food to try in Peru?", description: "Not a big fan of meat, but will eat fish.", author_id: two.id)
-  a_five = Answer.create!(body: "So many things to try. Even if you don't like fish, you should give ceviche a try. There are many different kinds and you are sure to find one you like.", author_id: one.id, question_id: q_two.id, image: File.new(icon_path + "ceviche.jpg"))
   a_six = Answer.create!(body: "Anticuchos are the best Peruvian food without a doubt. Anticuchos are cut from the heart of a cow, you can also eat anticuchos made from chicken heart. While your average American might find this food a little too adventurous, the flavour of an anticucho is not very different from steak. Honestly, you will not regret your choice.", author_id: four.id, question_id: q_two.id, image: File.new(icon_path + "anticuchos.jpg"))
+  a_five = Answer.create!(body: "So many things to try. Even if you don't like fish, you should give ceviche a try. There are many different kinds and you are sure to find one you like.", author_id: one.id, question_id: q_two.id, image: File.new(icon_path + "ceviche.jpg"))
   a_seven = Answer.create!(body: "Sushi, sushi, and more sushi. Peru is on the Pacific Coast and has a thriving fishing industry. You will never taste fresher fish anywhere else except for Japan. The large Japanese population in the country has integrated flawlessly and created an incredible fusion of flavors between the Japanese and Peruvian. You won't find flavors like these in Japan. Give it a shot.", author_id: seven.id, question_id: q_two.id, image: File.new(icon_path + "sushi.jpg"))
   a_eight = Answer.create!(body: "Honestly there is so much to try I don't know where to begin. There is something for every person. Personally I am a big fan of Peruvian chifa. Chifa is short for Chinese food. It is fusion though so it has many original flavors. Usually pretty cheap. Give it a shot.", author_id: two.id, question_id: q_two.id)
 
@@ -90,9 +90,9 @@ q_six = Question.create!(title: "I got robbed while backpacking through Bolivia?
 
 
 q_seven = Question.create!(title: "Is it illegal to buy bamba?", description: "In Bolivia, bamba is contraband... but it's almost impossible to find media anywhere else.", author_id: eight.id)
+  a_twentysix = Answer.create!(body: "Well yes from a certain perspective. If you're American your government certainly wouldn't support it. Don't even think of trying to bring it back to the country. While you're in Bolivia though, it shouldn't be a problem.", author_id: eighteen.id, question_id: q_seven.id)
   a_twentyfour = Answer.create!(body: "It's kind of a grey area... Do what you feel is right for you.", author_id: six.id, question_id: q_seven.id)
   a_twentyfive = Answer.create!(body: "No. If it were do you think they'd be selling it in the open? Everybody buys bamba. The police officers, the politicians, everyone. It's just a fact of life in this area. Since these media will never be released here they are just sold contraband.", author_id: twelve.id, question_id: q_seven.id)
-  a_twentysix = Answer.create!(body: "Well yes from a certain perspective. If you're American your government certainly wouldn't support it. Don't even think of trying to bring it back to the country. While you're in Bolivia though, it shouldn't be a problem.", author_id: eighteen.id, question_id: q_seven.id)
 
 
 q_eight = Question.create!(title: "What are some good vegetarian foods in Croatia?", description: "", author_id: nine.id)
@@ -103,8 +103,8 @@ q_eight = Question.create!(title: "What are some good vegetarian foods in Croati
 
 
 q_nine = Question.create!(title: "Having trouble deciding between Ibiza and Zanzibar.", description: "People say Zanzibar is pretty amazing to visit, and I am looking for a beach vacation but Ibiza is closer and perhaps more modern.", author_id: ten.id)
-  a_thirty = Answer.create!(body: "Zanzibar is overrated. Sure there are beaches and there's history... but it's still dirt poor and underdeveloped. If that kind of rustic holiday appeals to you, by all means choose Zanzibar. When I'm on vacation, however, I like to relax in places that are perhaps more relaxing than where I currently live. Going to Zanzibar you will almost certainly be spending more money to have below-average accomodations. Bad internet, bad services, etc. Go to Ibiza. It's developed and made for a relaxing holiday.", author_id: one.id, question_id: q_nine.id)
   a_thirtyone = Answer.create!(body: "Zanzibar! If you've never been to Africa, Zanzibar is a great start. It has a very vibrant island culture with a deep history. I don't know where the other poster got their information from but the accomodations are more than reasonable. In addition, Ibiza has essentially devolved into a place where people go to get drunk and party. It doesn't exactly have a great ambience if you're not into that sort of thing.", author_id: two.id, question_id: q_nine.id)
+  a_thirty = Answer.create!(body: "Zanzibar is overrated. Sure there are beaches and there's history... but it's still dirt poor and underdeveloped. If that kind of rustic holiday appeals to you, by all means choose Zanzibar. When I'm on vacation, however, I like to relax in places that are perhaps more relaxing than where I currently live. Going to Zanzibar you will almost certainly be spending more money to have below-average accomodations. Bad internet, bad services, etc. Go to Ibiza. It's developed and made for a relaxing holiday.", author_id: one.id, question_id: q_nine.id)
   a_thirtytwo = Answer.create!(body: "I think it depends on what you're looking for. Honestly, if I was looking for a tranquil beach vacation, I might look at one of Ibiza's sister islands Menorca or Mallorca. Ibiza is more for clubbing and it's ambience can be somewhat troubling. As for Zanzibar, go there if you're looking for something different. But there are better places to go if you're not drawn to something more rustic.", author_id: three.id, question_id: q_nine.id, image: File.new(icon_path + "zanzibar.jpg"))
 
 
@@ -120,8 +120,8 @@ q_eleven = Question.create!(title: "Is it possible to rent llamas in Peru?", des
 
 
 q_twelve = Question.create!(title: "Looking for things to do in Brussels", description: "All suggestions welcome", author_id: thirteen.id)
-  a_thirtyseven = Answer.create!(body: "Go clubbing. Brussels has a pretty cool clubbing scene. At one point in time Brussels was one of the centers of electronic music in Europe. Not so sure what it's like these days.", author_id: eight.id, question_id: q_twelve.id)
   a_thirtyeight = Answer.create!(body: "Go to the Grand Platz. Personally I find it to be one of the most majestic things to go see in Europe. It's also one of the more used squares. There are always people there and events taking place. Once every two years they cover the entire floor of the Grand Platz in roses. It's quite something to see. There are also many museums in the area. Failing this you can go shopping on Avenue Louise.", author_id: one.id, question_id: q_twelve.id, image: File.new(icon_path + "platz.jpg"))
+  a_thirtyseven = Answer.create!(body: "Go clubbing. Brussels has a pretty cool clubbing scene. At one point in time Brussels was one of the centers of electronic music in Europe. Not so sure what it's like these days.", author_id: eight.id, question_id: q_twelve.id)
 
 
 q_thirteen = Question.create!(title: "Looking for some hiking ideas around Tokyo", description: "Nature guy travelling to Tokyo for a couple weeks. Won't be going too far out.", author_id: fourteen.id)
@@ -131,8 +131,8 @@ q_thirteen = Question.create!(title: "Looking for some hiking ideas around Tokyo
 
 
 q_fourteen = Question.create!(title: "What's your favorite area of France?", description: "", author_id: fifteen.id)
-  a_fortytwo = Answer.create!(body: "Nowhere. Why would you go to France. That place is a waste of time and money. Everything is overpriced and everyone is so rude. Not worth my vacation days.", author_id: thirteen.id, question_id: q_fourteen.id)
   a_fortythree = Answer.create!(body: "Paris! So much culture. So many things to do. Everybody is so stylish and cultured. There is an ambience there that just can't be rivalled anywhere else on Earth. Obviously It has some of it's own drawbacks, but nothing that the good can't handle.", author_id: eleven.id, question_id: q_fourteen.id)
+  a_fortytwo = Answer.create!(body: "Nowhere. Why would you go to France. That place is a waste of time and money. Everything is overpriced and everyone is so rude. Not worth my vacation days.", author_id: thirteen.id, question_id: q_fourteen.id)
   a_fortyfour = Answer.create!(body: "The Ardennes. Lots of history there. In addition on the anniversary of the Battle of the Bugle it is incredible.", author_id: nine.id, question_id: q_fourteen.id)
 
 
@@ -141,8 +141,8 @@ q_fifteen = Question.create!(title: "Best beaches in the world?", description: "
 
 
 q_sixteen = Question.create!(title: "Family friendly vacations in Africa?", description: "Preferably sub-Saharan", author_id: seventeen.id)
-  a_fortysix = Answer.create!(body: "Safaris are great vacations for the family. Just make sure to keep an eye on your kids and lock the doors! Child locks on the doors a must. In addition to these concerns, safaris can be quite expensive... especially if you have a larger family. Even so, the trip would be unforgettable.", author_id: two.id, question_id: q_sixteen.id, image: File.new(icon_path + "safari.jpg"))
   a_fortyseven = Answer.create!(body: "South Africa was always my favorite location in Africa. There are many great cities in South Africa such as Cape Town and Johannesburg. In addition, if you'd like to go on Safari, there are also locations nearby that are incredible. The cities themselves have many great modern things and South Africans have a very interesting culture. The gold mines of Johannesburg in particular are a great location for family..", author_id: sixteen.id, question_id: q_sixteen.id, image: File.new(icon_path + "gold.jpg"))
+  a_fortysix = Answer.create!(body: "Safaris are great vacations for the family. Just make sure to keep an eye on your kids and lock the doors! Child locks on the doors a must. In addition to these concerns, safaris can be quite expensive... especially if you have a larger family. Even so, the trip would be unforgettable.", author_id: two.id, question_id: q_sixteen.id, image: File.new(icon_path + "safari.jpg"))
 
 
 q_eighteen = Question.create!(title: "Going to the Louvre. What are the must see exhibits?", description: "Only have one day.", author_id: eighteen.id)

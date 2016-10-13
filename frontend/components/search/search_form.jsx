@@ -7,15 +7,21 @@ class SearchBar extends React.Component {
     this.state = {
         title: "",
         description: "",
+        query: "",
         author_id: this.props.currentUser.id,
         search: "search-submit",
         describe: "describe-hidden"
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.querySearch = this.querySearch.bind(this);
   }
 
   home() {
     hashHistory.push('/home');
+  }
+
+  querySearch() {
+    this.props.requestMatches(this.state.query);
   }
 
   handleClick(type) {
@@ -29,13 +35,13 @@ class SearchBar extends React.Component {
   }
 
   handleChange(type, e) {
-    if (this.state.search === "search-submit") {
+    if (type === "description") {
       this.setState({
-        search: "search-submit",
         [type]: e.currentTarget.value
       });
     } else {
       this.setState({
+        query: e.currentTarget.value,
         [type]: e.currentTarget.value
       });
     }
@@ -65,6 +71,7 @@ class SearchBar extends React.Component {
                  type="text"
                  value={this.state.title}
                  placeholder="Ask or Search Explora"
+                 onKeyUp={this.querySearch}
                  onClick={this.handleClick.bind(this)}
                  onChange={this.handleChange.bind(this, "title")}/>
          <input type="submit" value="Ask Question" className={this.state.search}/>

@@ -10,6 +10,16 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def index
+    if params[:query].empty?
+      @users = []
+    else
+      query = "#{params[:query]}%".upcase
+      @users = User.where("UPPER(username) LIKE ?", query)
+    end
+    render :index
+  end
+
   private
 
   def user_params

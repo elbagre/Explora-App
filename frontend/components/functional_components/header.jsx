@@ -1,6 +1,7 @@
 import React from 'react';
 import Search from '../search/search_container.js';
 import { Link, hashHistory } from 'react-router';
+import QueryIndex from '../search/query_index_container.js';
 
 class Header extends React.Component {
   constructor(props) {
@@ -48,6 +49,7 @@ class Header extends React.Component {
               </li>
               <li onClick={this.props.logout}>Logout</li>
             </ul>
+            <QueryIndex />
           </nav>
         </div>
       );

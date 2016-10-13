@@ -4,10 +4,11 @@ import QuestionMiddleware from './question_middleware.js';
 import AnswerMiddleware from './answer_middleware.js';
 import CommentMiddleware from './comment_middleware.js';
 import TopicMiddleware from './topic_middleware.js';
+import SearchMiddleware from './search_middleware.js';
 
 const RootMiddleware = applyMiddleware(
   SessionMiddleware, QuestionMiddleware, AnswerMiddleware, CommentMiddleware,
-  TopicMiddleware
+  TopicMiddleware, SearchMiddleware
 );
 
 export default RootMiddleware;

@@ -1,5 +1,6 @@
 .home-header {
   display: flex;
+  align-items: center;
   flex-direction: row;
   background: #fff;
   border-top: 2px solid #800000;
@@ -83,4 +84,26 @@ img {
 
 .content-main {
   margin-left: 170px;
+}
+
+.search-list {
+  display: none;
+  position: absolute;
+  width: 600px;
+  border-radius: 3px;
+  top: 60px;
+  left: 30%;
+  background: #fff;
+}
+
+.focused .search-list {
+  display: block;
+}
+
+.search-list a {
+  padding: 10px 5px;
+  display: block;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #ccc;
 }

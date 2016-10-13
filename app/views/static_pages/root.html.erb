@@ -3,6 +3,9 @@
     window.currentUser =  <%= render("api/users/user.json.jbuilder",
   		user: current_user).html_safe %>
   <% end %>
+  window.assets = {
+    bookOpenPageRed: "<%= image_url('book-open-page-red.png') %>"
+  }
 </script>
 
 <main id="root"></main>

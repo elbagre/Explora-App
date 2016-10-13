@@ -1,7 +1,8 @@
-export const fetchAllTopics = (success) => {
+export const fetchAllTopics = (success, query) => {
   $.ajax({
     method: 'GET',
     url: '/api/topics',
+    data: { query },
     success,
     error: () => console.log("Fetch topics error")
   });
