@@ -43,7 +43,7 @@ class Header extends React.Component {
                 <h4 to="/home">Read</h4>
               </li>
               <li className="answer" onClick={this.handleClick("/answer")}>
-                <img src="/assets/lead-pencil-grey.png" />
+                <img src="/assets/lead-pencil-red.png" />
                 <h4 to="/answer">Answer</h4>
               </li>
               <li onClick={this.props.logout}>Logout</li>

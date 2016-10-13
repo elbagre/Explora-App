@@ -49,11 +49,12 @@ class TopicHome extends React.Component {
       );
     }
   }
+
   render() {
     return (
       <div className="topic-home">
+        {this.header()}
         <div className="topic-container">
-          {this.header()}
           {this.questions()}
         </div>
       </div>

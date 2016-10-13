@@ -17,7 +17,7 @@ class Api::QuestionsController < ApplicationController
   end
 
   def index
-    @questions = Question.all
+    @questions = Question.joins(:answers).group(:id)
     render :index
   end
 
@@ -25,7 +25,7 @@ class Api::QuestionsController < ApplicationController
     @question = Question.find(params[:id])
 
     if @question.destroy
-      render :index
+      render {}
     else
       render @question.errors.full_messages, status: 402
     end

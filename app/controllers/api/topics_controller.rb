@@ -7,6 +7,7 @@ class Api::TopicsController < ApplicationController
   def show
     @topic = Topic.find(params[:id])
     @questions = @topic.tag_topics.map { |tagtopic| tagtopic.question }
+    @questions.select! { |question| !question.answers.empty? }
     render :show
   end
 end

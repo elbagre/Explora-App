@@ -1,9 +1,9 @@
 .topic-home {
   padding-top: 30px;
-  margin-left: 180px;
 }
 
 .topic-home h1 {
+  width: 100%;
   font-size: 60px;
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -11,11 +11,25 @@
 }
 
 .topic-container {
-  width: 800px;
+  width: 600px;
+}
+
+.topic-item {
+  padding: 5px 0 20px 0;
 }
 
 .topic-item > h2 {
   font-size: 18px;
   font-weight: bold;
   padding: 5px 0;
+}
+
+.topic-item > h4 {
+  font-size: 16px;
+  color: #445087;
+  padding: 10px 0;
+}
+
+.topic-item > p {
+
 }

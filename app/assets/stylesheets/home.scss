@@ -1,9 +1,10 @@
 .home-header {
-  display: block;
+  display: flex;
+  flex-direction: row;
   background: #fff;
   border-top: 2px solid #800000;
   border-bottom:1px solid #ccc;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 0;
   left: 0;
@@ -11,23 +12,27 @@
 }
 
 .home-nav {
+  display: flex;
   width: 1000px;
   margin: 0 auto;
   color: #800000;
 }
 
+
 .home-links {
   background: #fff;
-  float: left;
+  display: flex;
   width: 300px;
-  padding: 5px;
   font-weight: bold;
+  align-items: center;
 }
 
 .home-links > li {
   cursor: pointer;
-  float: left;
-  padding: 10px 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .home-links > li:hover {
@@ -35,19 +40,15 @@
 }
 
 img {
-  float: left;
-  align-items: center;
-  color: red;
   height: auto;
   width: auto;
-  max-width: 20px;
-  max-height: 20px;
+  max-width: 25px;
+  max-height: 25px;
   margin-right: 5px;
 }
 
-.read h4, .answer h4 {
-  padding: 2px 0;
-  float: left;
+.read, .answer {
+  width: auto;
 }
 
 .home-header li button {
@@ -58,7 +59,6 @@ img {
 }
 
 .home-header div {
-  float: left;
 }
 
 .home-main {
@@ -79,4 +79,8 @@ img {
   height: 100%;
   width: 100%;
   z-index: 2;
+}
+
+.content-main {
+  margin-left: 170px;
 }

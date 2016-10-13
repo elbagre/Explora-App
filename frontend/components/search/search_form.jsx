@@ -31,7 +31,7 @@ class SearchBar extends React.Component {
   handleChange(type, e) {
     if (this.state.search === "search-submit") {
       this.setState({
-        search: "search-submit true",
+        search: "search-submit",
         [type]: e.currentTarget.value
       });
     } else {

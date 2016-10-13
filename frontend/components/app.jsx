@@ -30,7 +30,9 @@ class App extends React.Component {
         <div className={this.state.modal} onClick={this.untoggleModal} />
         <section className="home-main group">
           <SideBarContainer className="home-left-sidebar"/>
-          {this.props.children}
+          <div className="content-main">
+            {this.props.children}
+          </div>
         </section>
       </div>
     );
