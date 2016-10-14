@@ -14,8 +14,7 @@
 
 .home-nav {
   display: flex;
-  width: 1000px;
-  margin: 0 auto;
+  margin-left: 23%;
   color: #800000;
 }
 
@@ -77,6 +76,7 @@ img {
   left: 0;
   background: #000;
   opacity: 0.75;
+  min-height: 1200px;
   height: 100%;
   width: 100%;
   z-index: 2;
@@ -91,7 +91,7 @@ img {
   position: absolute;
   width: 600px;
   border-radius: 3px;
-  top: 60px;
+  top: 120%;
   left: 30%;
   background: #fff;
 }
@@ -100,10 +100,21 @@ img {
   display: block;
 }
 
+.search-list >li:first-child {
+  background: #eee;
+  color: #aaa;
+  text-align: center;
+  padding: 5px 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
 .search-list a {
   padding: 10px 5px;
   display: block;
   font-weight: bold;
   color: #000;
   border-bottom: 1px solid #ccc;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }

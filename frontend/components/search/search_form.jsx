@@ -14,6 +14,7 @@ class SearchBar extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.querySearch = this.querySearch.bind(this);
+    this.clearForms = this.clearForms.bind(this);
   }
 
   home() {
@@ -32,6 +33,15 @@ class SearchBar extends React.Component {
     } else {
       this.props.toggleFocus();
     }
+  }
+
+  clearForms() {
+    this.setState({
+      query: "" ,
+      title: "",
+      description: "",
+      describe: "describe-hidden"
+    })
   }
 
   handleChange(type, e) {
@@ -54,12 +64,7 @@ class SearchBar extends React.Component {
       description: this.state.description,
       author_id: this.state.author_id
     });
-    this.setState({
-      title: "",
-      description: "",
-      search: "search-submit",
-      describe: "describe-hidden"
-    })
+    this.clearForms();
   }
 
   render() {

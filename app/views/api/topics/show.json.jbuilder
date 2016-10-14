@@ -1,5 +1,5 @@
-json.extract! @tagtopics.first.topic, :id, :name
+json.extract! @topic, :id, :name
 
-json.questions @tagtopics.each do |tagtopic|
-  json.partial! "api/questions/question", question: tagtopic.question
+json.questions @questions.each do |question|
+  json.partial! "api/questions/question", question: question
 end

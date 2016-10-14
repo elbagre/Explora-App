@@ -28,9 +28,9 @@ class TopicHome extends React.Component {
   }
 
   header() {
-    if (this.props.topic.topic) {
+    if (this.props.topic) {
       return (
-        <h1>{this.props.topic.topic.name}</h1>
+        <h1>{this.props.topic.name}</h1>
       );
     }
   }

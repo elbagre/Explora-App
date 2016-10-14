@@ -11,7 +11,7 @@ export const fetchSearchQuestions = (success, query) => {
 export const fetchSearchTopics = (success, query) => {
   $.ajax({
     method: 'GET',
-    url: "/api/topics",
+    url: "/api/topics/search_index",
     data: { query },
     success,
     error: () => console.log("Error in fetch search query")

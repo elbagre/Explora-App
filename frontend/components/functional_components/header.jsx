@@ -33,6 +33,7 @@ class Header extends React.Component {
   }
 
   render () {
+    console.log(this.state.focus);
     if (this.props.currentUser) {
       return (
         <div className="home-header group">
@@ -49,7 +50,7 @@ class Header extends React.Component {
               </li>
               <li onClick={this.props.logout}>Logout</li>
             </ul>
-            <QueryIndex />
+            <QueryIndex untoggleModal={this.props.untoggleModal}/>
           </nav>
         </div>
       );
